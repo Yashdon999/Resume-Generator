@@ -24,8 +24,10 @@ function Header() {
 
 const StyledNavbar = styled(Navbar)`
   padding: 1rem 2rem;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+  background-color: #fff; 
   border-bottom: 1px solid #e4e4e4;
 `;
 
