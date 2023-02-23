@@ -1,12 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/resume");
+  };
+
   return (
     <Mains>
       <Heading>ONLINE RESUME BUILDER</Heading>
       <MainSection className="main">
-        <Button>Create My Resume</Button>
+        <Button onClick={handleClick}>Create My Resume</Button>
       </MainSection>
     </Mains>
   );

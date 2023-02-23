@@ -1,19 +1,20 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+// import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styled from 'styled-components';
+import { NavLink, Link } from 'react-router-dom';
 
 function Header() {
   return (
     <StyledNavbar bg="light" expand="lg">
       <Container fluid>
-        <StyledNavbar.Brand href="#">Resume Generator</StyledNavbar.Brand>
+        <StyledNavbar.Brand as={Link} to="/">Resume Generator</StyledNavbar.Brand>
         <StyledNavbar.Toggle aria-controls="navbarScroll" />
         <StyledNavbar.Collapse id="navbarScroll">
-          <NavLinks navbarScroll>
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+          <NavLinks>
+            <StyledNavLink exact as={NavLink} to="/">Home</StyledNavLink>
+            <StyledNavLink as={NavLink} to="/about">About</StyledNavLink>
+            <StyledNavLink as={NavLink} to="/contact">Contact</StyledNavLink>
           </NavLinks>
         </StyledNavbar.Collapse>
       </Container>
@@ -23,26 +24,59 @@ function Header() {
 
 const StyledNavbar = styled(Navbar)`
   padding: 1rem 2rem;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-bottom: 1px solid #e4e4e4;
 `;
 
-const NavLinks = styled(Nav)`
-  max-height: 100px;
-  overflow-y: auto;
-  @media (max-width: 768px) {
-    max-height: none;
-  }
+const NavLinks = styled.nav`
+  display: flex;
+  align-items: center;
 `;
 
-const NavLink = styled(Nav.Link)`
+const StyledNavLink = styled(NavLink)`
   color: #333;
-  font-weight: bold;
+  font-weight: 500;
+  margin: 0 1rem;
   &:hover {
     color: #555;
+    text-decoration: none;
+  }
+  &.active {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 2px solid #007bff;
   }
 `;
 
 export default Header;
+
+
+// const StyledNavbar = styled(Navbar)`
+//   padding: 1rem 2rem;
+//   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+//   background-color: #fff;
+//   border-bottom: 1px solid #e4e4e4;
+// `;
+
+// const NavLinks = styled(Nav)`
+//   display: flex;
+//   align-items: center;
+// `;
+
+// const NavLink = styled(Nav.Link)`
+//   color: #333;
+//   font-weight: 500;
+//   margin: 0 1rem;
+//   &:hover {
+//     color: #555;
+//     text-decoration: none;
+//   }
+//   &.active {
+//     color: #007bff;
+//     text-decoration: none;
+//     border-bottom: 2px solid #007bff;
+//   }
+// `;
+
+// export default Header;
