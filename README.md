@@ -32,10 +32,38 @@
 It is a Resumer Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
 
 # Used Languages
-* Html <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" width="20" height="15">
-* Css<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="20" height="15">
-* Javascript <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" width="20" height="20">
+* Html <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" width="20" height="20">
+* Css <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="15" height="20">
+* Javascript <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" width="30" height="20">
+* React <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="20" height="20">
 
+# Installation
+
+To use this project locally, follow these steps:
+
+1. Clone the repository: 
+
+```git clone https://github.com/Yashdon999/Resume-Genrator.git```
+
+
+2. Go to the project directory: 
+
+```cd Resume-Genrator```
+
+
+3. Install dependencies: 
+
+```npm install```
+
+
+4. Start the development server: 
+
+```npm start```
+
+
+5. Open the app in your browser at: 
+
+```http://localhost:3000/```
 
 # Web URL
 
