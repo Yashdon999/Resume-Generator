@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+<h2 align="center"><b>Owner: <a href="https://github.com/Yashdon999">YASH 🇮🇳</a></b></h2>
+<br>
+<p align="center"><img src="https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1625166167/1625166166.jpg"></a></p> 
+</p>
+<h1>RESUME GENERATOR</h1>
+<b>A RESPONSIVE AND USEFULL WEB.</b>
+<br>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Private Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)]( https://github.com/Yashdon999/Resume-Genrator)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg?&style=flat-square)]( https://github.com/Yashdon999/Resume-Genrator/blob/main/LICENSE)
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
 
-### `npm start`
+# About Resume Generator
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. It can help you to generate your own Resume 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Which can help you represent yourself at Companies 
 
-### `npm test`
+3. It automatically converts your details into a attractive Resume Template
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. It can help you to get a job easily
 
-### `npm run build`
+5. The attractiveness of resume is directly proportional to the high chances of getting a good job, the more the resume is attractive is the more chances of a job
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Note-: 
 
-### `npm run eject`
+It is a Resumer Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Used Languages
+* Html <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&usqp=CAU" width="20" height="15">
+* Css<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="20" height="15">
+* Javascript <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" width="20" height="20">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Web URL
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+.....
 
-## Learn More
+# Credits 
+* [Yash Vyavahare](https://github.com/Yashdon999)
+* [Khizar Shah](https://github.com/Khizarshah01)
+* [Harsh Baraliya](https://github.com/MrCracker-OP)
+* [Shashwat Agrawal](https://github.com/ShashwatAgrawal20)
+* [Om Infle]()
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Support us by Donating
 
-### Code Splitting
+Pay us using
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img src="https://pbs.twimg.com/profile_images/1329113828731146242/FzxBBPrs_400x400.jpg" width="40" height="40">
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

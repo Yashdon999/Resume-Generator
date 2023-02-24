@@ -6,7 +6,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <StyledNavbar bg="light" expand="lg">
+    <StyledNavbar sticky="top" bg="light" expand="lg">
       <Container fluid>
         <StyledNavbar.Brand as={Link} to="/">Resume Generator</StyledNavbar.Brand>
         <StyledNavbar.Toggle aria-controls="navbarScroll" />
