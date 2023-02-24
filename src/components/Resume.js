@@ -1,14 +1,27 @@
-import React from 'react'
-// import App from './components/App/App.js'
+import { ResumeProvider } from './ResumePage/Context';
+import { useEffect } from 'react';
+import './App.css';
+// import Header from './ResumePage/element/Layouts/Header';
+import Main from './ResumePage/element/Main';
+import WebFont from 'webfontloader';
 const Resume = () => {
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Pacifico', 'Poppins']
+      }
+    });
+  }, []);
   return (
-      <div>
-        {/* <App /> */}
-        <h1>Yo the resume generator</h1>
-        <a href="url">link text</a>
-      </div>
+    <>
+    <ResumeProvider>
+      {/* <Header /> */}
+      <Main />
+    </ResumeProvider>
+  </>
   );
 }
 
-export default Resume
+export default Resume;
 
