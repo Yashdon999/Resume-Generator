@@ -50,7 +50,7 @@ const ResumePreview = () => {
 
             <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
               <Heading as="h4" size="md">
-                {about.name ? about.name : "Jhon Doe"}
+                {about.name ? about.name : "Harry Potter"}
               </Heading>
               <Text color={"gray.500"}>
                 {about.role ? about.role : "Full Stack Web Developer"}
@@ -66,7 +66,7 @@ const ResumePreview = () => {
           >
             <HStack spacing={1}>
               <MdMail />{" "}
-              <Text>{about.email ? about.email : "jhondoe@gmail.com"}</Text>
+              <Text>{about.email ? about.email : "thechosenone@hogwarts.edu"}</Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocalPhone />{" "}
@@ -95,7 +95,7 @@ const ResumePreview = () => {
             spacing={1}
           >
             <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={6}>
-              // EDUCATION
+              {/* EDUCATION */}
               <VStack alignItems={"flex-start"}>
                 <Heading as="h4" size="md" color={"gray.700"}>
                   EDUCATION
@@ -112,10 +112,10 @@ const ResumePreview = () => {
                       pb={2}
                     >
                       <Text fontWeight={"medium"}>
-                        {degree ? degree : "B.Tech Computer Engineering"}
+                        {degree ? degree : "Bachelor of Wizarding Science in Computer Engineering"}
                       </Text>
                       <Text fontSize={"sm"}>
-                        {school ? school : "College of Engineering Pune"}
+                        {school ? school : "Hogwarts School of Witchcraft and Wizardry"}
                       </Text>
                       <HStack
                         fontSize={"xs"}
@@ -124,15 +124,15 @@ const ResumePreview = () => {
                         w={"full"}
                       >
                         <Text>
-                          {startYr ? startYr : 2014} - {endYr ? endYr : 2018}
+                          {startYr ? startYr : 2018} - {endYr ? endYr : 2022}
                         </Text>
-                        <Text>{grade ? grade : "8.7 CGPA"}</Text>
+                        <Text>{grade ? grade : "10 CGPA"}</Text>
                       </HStack>
                     </VStack>
                   );
                 })}
               </VStack>
-              // EDUCATION // WORK EXPERIENCE
+              {/* EDUCATION WORK EXPERIENCE */}
               <VStack alignItems={"flex-start"}>
                 <Heading as="h4" size="md" color={"gray.700"}>
                   WORK EXPERIENCE
@@ -159,27 +159,27 @@ const ResumePreview = () => {
                         {position ? position : "Full Stack Developer"}
                       </Text>
                       <Text fontSize={"sm"}>
-                        {company ? company : "XYZ Infotech Services"} -{" "}
+                        {company ? company : "Nimbus Network Solutions"} -{" "}
                         {type ? type : "Full-time"}
                       </Text>
                       <Text fontSize={"xs"} fontStyle={"italic"}>
-                        {startDate ? startDate : "2018-03"} -{" "}
-                        {endDate ? endDate : "2021-12"}
+                        {startDate ? startDate : "2022-06"} -{" "}
+                        {endDate ? endDate : "2023-02"}
                       </Text>
                       <Text fontSize={"sm"} as="p">
                         {desc
                           ? desc
-                          : "Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed."}
+                          : "Used wand (JavaScript) to vanquish bugs from existing websites and cast spells (implemented enhancements) that significantly improved web functionality and speed."}
                       </Text>
                     </VStack>
                   );
                 })}
               </VStack>
-              // WORK EXPERIENCE
+              {/* WORK EXPERIENCE */}
             </VStack>
 
             <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={6}>
-              // SKILLS
+              {/* SKILLS */}
               <VStack alignItems={"flex-start"}>
                 <Heading as="h4" size="md" color={"gray.700"}>
                   SKILLS
@@ -198,7 +198,7 @@ const ResumePreview = () => {
                   ))}
                 </Wrap>
               </VStack>
-              // SKILLS // PROJECTS
+              {/* SKILLS PROJECTS */}
               <VStack alignItems={"flex-start"}>
                 <Heading as="h4" size="md" color={"gray.700"}>
                   PROJECTS
@@ -232,7 +232,7 @@ const ResumePreview = () => {
                   );
                 })}
               </VStack>
-              // PROJECTS
+              {/* PROJECTS */}
             </VStack>
           </HStack>
         </div>

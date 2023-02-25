@@ -46,7 +46,7 @@ const Button = styled.button`
   font-size: 20px;
   font-weight: bold;
   /* background-color: #10c479; */
-  background-color: #2eac20;
+  background-color: #99b4ff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -56,7 +56,7 @@ const Button = styled.button`
 
   &:hover {
     /* background-color: #30856a; */
-    background-color: #2eac20;
+    background-color: #7a9cfd;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -68,7 +68,7 @@ const Button1 = styled.button`
   font-size: 20px;
   font-weight: bold;
   /* background-color: #10c479; */
-  background-color: gray;
+  background-color: #e7a2a2;
   color: white;
   border: none;
   border-radius: 5px;
@@ -112,7 +112,7 @@ const ImageSection = styled.div`
 `;
 
 const Main2 = styled.div`
-  background-color: #f0dbbf;
+  background-color: #eddbc5;
   color: black;
   display: flex;
   flex-direction: row;
@@ -230,7 +230,7 @@ const Main = () => {
         <MainSection className="main">
           <Button onClick={handleClick}>Create My Resume</Button>
         </MainSection>
-        <Img src="https://i.pinimg.com/originals/f7/a2/7d/f7a27d2c8ec6d60ac851a8455d912c50.png" alt="Resume"/>
+        <Img src="https://cdn-images.zety.com/pages/one_page_resume_templates_004.jpg" alt="Resume"/>
       </Main1>
 
       <Main2>

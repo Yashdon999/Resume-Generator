@@ -1,5 +1,5 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, FormControl, FormLabel, HStack, Input, NumberDecrementStepper, NumberIncrementStepper, NumberInput, NumberInputField, NumberInputStepper, VStack, Text } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, FormControl, FormLabel, HStack, Input, VStack, Text } from '@chakra-ui/react'
+import React from 'react'
 import { useResume } from '../../Context';
 
 const Education = () => {
@@ -37,7 +37,7 @@ const Education = () => {
 
                                 <VStack spacing={4}>
                                     <Input onChange={(e) => handleChange(e, index)} name='degree' type='text' variant='filled' placeholder='Degree' />
-                                    <Input onChange={(e) => handleChange(e, index)} name='school' type='text' variant='filled' placeholder='School' />
+                                    <Input onChange={(e) => handleChange(e, index)} name='school' type='text' variant='filled' placeholder='College' />
                                 </VStack>
 
                                 <HStack spacing={4} mt={4}>
