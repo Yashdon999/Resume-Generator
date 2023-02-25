@@ -74,7 +74,7 @@ To use this project locally, follow these steps:
 * [Khizar Shah](https://github.com/Khizarshah01)
 * [Harsh Baraliya](https://github.com/MrCracker-OP)
 * [Shashwat Agrawal](https://github.com/ShashwatAgrawal20)
-* [Om Infle]()
+* [Om Ingle](https://github.com/mr-pros)
 
 
 # Support us by Donating
