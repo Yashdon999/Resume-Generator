@@ -3,22 +3,26 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const StyledForm = styled(Form)`
-  background-color: #264c6be0;
-  border-radius: 10px;
+  background-color: #ADEFD1FF;
+  /* border-radius: 10px; */
+  font-family: Garamond, serif;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   height: 90vh;
+  width: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 2rem;
   margin-top: 40px;
-  color: white;
-  font: 
+  margin-left: 35px;
+  margin-bottom: 35px;
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.22), 1px 0px 0px 0px rgba(0,0,0,0.22), 1px 2px 0px 0px rgba(0,0,0,0.22), 2px 1px 0px 0px rgba(0,0,0,0.22), 2px 3px 0px 0px rgba(0,0,0,0.22), 3px 2px 0px 0px rgba(0,0,0,0.22), 3px 4px 0px 0px rgba(0,0,0,0.22), 4px 3px 0px 0px rgba(0,0,0,0.22), 4px 5px 0px 0px rgba(0,0,0,0.22), 5px 4px 0px 0px rgba(0,0,0,0.22), 5px 6px 0px 0px rgba(0,0,0,0.22), 6px 5px 0px 0px rgba(0,0,0,0.22), 6px 7px 0px 0px rgba(0,0,0,0.22), 7px 6px 0px 0px rgba(0,0,0,0.22), 7px 8px 0px 0px rgba(0,0,0,0.22), 8px 7px 0px 0px rgba(0,0,0,0.22);
+ 
 
   input[type="text"],
   input[type="email"],
   textarea {
-    border: 2px solid white;
+    border: 2px solid grey;
     border-radius: 5px;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -30,9 +34,10 @@ const StyledForm = styled(Form)`
   }
 
   @media (max-width: 767px) {
-    /* adjust form styling for mobile screens */
-    padding: 0 1rem;
+    /* styles for screens with a maximum width of 767 pixels */
     height: auto;
+    width: 100%;
+    margin: 0;
 
     input[type="text"],
     input[type="email"],
@@ -48,15 +53,16 @@ const StyledForm = styled(Form)`
 `;
 
 const StyledButton = styled(Button)`
-  background-color: #2f63c3;
+  background-color: grey;
   // box-shadow: 1px 2px 14px 0px black;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 1rem 0;
+  border: none;
 
   &:hover {
-    background-color: #5b95ff;
-    border-color: #023e8a;
+    background-color: black;
+    /* border-color: #023e8a; */
   }
 
   @media (max-width: 767px) {
@@ -67,10 +73,11 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledSection = styled.section`
-  background-image: url('https://softlinkoptions.co.ke/wp-content/uploads/2017/09/i-need-a-website-for-my-small-business-where-start1.jpg');
+  /* background-image: url('https://softlinkoptions.co.ke/wp-content/uploads/2017/09/i-need-a-website-for-my-small-business-where-start1.jpg');
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 100vh; */
+  background-color: #00203FFF;
 `;
 
 const Contact = () => {
