@@ -1,89 +1,88 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import styled from 'styled-components';
 
 const StyledCard = styled(Card)`
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    transform: scale(0.9);
-    transform-origin: center;
-  }
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+
 `;
 
-const DeveloperCard = ({ developer }) => {
-  const [showBio, setShowBio] = useState(false);
-
-  return (
-    <StyledCard
-      onMouseEnter={() => setShowBio(true)}
-      onMouseLeave={() => setShowBio(false)}
-    >
-      <Card.Img variant="top" src={developer.image} />
-      {showBio ? (
-        <Card.Body>
-          <Card.Title>{developer.name}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">{developer.role}</Card.Subtitle>
-          <Card.Text>{developer.bio}</Card.Text>
-        </Card.Body>
-      ) : null}
-    </StyledCard>
-  );
-};
 
 const About = () => {
   const developers = [
     {
       id: 1,
       name: 'Harsh Baraliya',
-      role: 'Full Stack Developer',
-      image: 'https://avatars.githubusercontent.com/u/77793128?v=4',
-      bio: 'I am a full stack developer with expertise in Node.js, React, and MongoDB.',
+      role: 'CEO & Founder',
+      image: 'https://via.placeholder.com/250',
     },
     {
       id: 2,
       name: 'Khizar Shah',
-      role: 'Front-end Developer',
-      image: 'https://avatars.githubusercontent.com/u/109973520?v=4',
-      bio: 'I specialize in building modern and responsive user interfaces using React and CSS frameworks like Bootstrap.',
+      role: 'Full Stack Developer',
+      image: 'https://via.placeholder.com/250',
     },
     {
       id: 3,
       name: 'Om Ingle',
-      role: 'Back-end Developer',
-      image: 'https://avatars.githubusercontent.com/u/109346115?v=4' ,
-      bio: 'I am experienced in building scalable and performant back-end systems using Node.js and SQL/NoSQL databases.',
+      role: 'The (quality) tester',
+      image: 'https://via.placeholder.com/250',
     },
     {
       id: 4,
       name: 'Shashwat Agrawal',
-      role: 'UI/UX Designer',
-      image: 'https://avatars.githubusercontent.com/u/72117025?v=4',
-      bio: 'I am a creative UI/UX designer with a passion for building intuitive and visually appealing interfaces.',
+      role: 'Back-end Developer',
+      image: 'https://via.placeholder.com/250',
     },
     {
       id: 5,
       name: 'Yash Vyavahare',
-      role: 'Mobile App Developer',
-      image: 'https://avatars.githubusercontent.com/u/104668751?v=4',
-      bio: 'I specialize in building cross-platform mobile apps using React Native and other popular mobile frameworks.',
+      role: 'UI/UX Designer',
+      image: 'https://via.placeholder.com/250',
     },
   ];
 
+  const teamHeader = "Our Team";
+  const teamDescription = "Meet the amazing people who make it all possible!";
+
   return (
-    <body>
+    <>
+    {/* <section id="aim" className="py-5">
+    <Container className="mt-5">
+<h2 className="text-center mt-4 fs-2 fw-bold">Our Aim</h2>
+<p className="text-center">At our core, we aim to assist individuals seeking employment in advancing their careers. We derive immense satisfaction from aiding job seekers in distinguishing themselves during their job hunt and securing employment more expeditiously.</p>
+      </Container>
+    </section> */}
       <section id="about" className="py-5">
         <Container>
-          <h2 className="text-center mt-4 fs-2 fw-bold">Our Team</h2>
-          <Row className="d-flex justify-content-center align-items-center">
+        <h2 className="text-center mt-4 fs-2 fw-bold">{teamHeader}</h2>
+  <p className="text-center">{teamDescription}</p>
+  <Row 
+  // style={{ margin: "20px"}}
+  >
             {developers.map((developer) => (
               <Col md={4} key={developer.id}>
-                <DeveloperCard developer={developer} />
+                <StyledCard>
+                  <Card.Img variant="top" src={developer.image} style={{ width: "150px", height: "150px", borderRadius: "50%", objectFit: "cover" }} />
+                  <Card.Body>
+                    <Card.Title>{developer.name}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{developer.role}</Card.Subtitle>
+                  </Card.Body>
+                </StyledCard>
               </Col>
             ))}
           </Row>
         </Container>
       </section>
-    </body>
+    </>
   );
 };
 
