@@ -2,9 +2,14 @@
   import React from 'react';
   import { Container, Row, Col, Card } from 'react-bootstrap';
   import styled from 'styled-components';
+
+  const Demo = styled.div`
+  font-family: Garamond, serif;
+  
+  `;
   
   const StyledCard = styled(Card)`
-    background-color: #f8f9fa;
+    background-color: #b2e2c0;
     border-radius: 10px;
     // box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     margin: 1rem;
@@ -14,11 +19,15 @@
     align-items: center;
     // padding-top: 8px;
     padding-top: 5px;
+    border: none;
+    font-weight: bold;
 
     &:hover{
-      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-      background-color: grey;
+      /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      background-color: #4eb3a1;
       color: white;
+      border: none;
       // border: 5px solid black;
       //Sham ko 7 baje badalta color
     }
@@ -34,7 +43,7 @@
     // min-height: 500px;
     // display: flex;
     // align-items: center;
-    background-color:  #b5b1ace0;
+    background-color:  #f8ee99;
   `;
   
   const About = () => {
@@ -76,7 +85,7 @@
     const teamDescription = 'Meet the amazing people who make it all possible!';
   
     return (
-      <>
+      <Demo>
         <Background>
           <Container 
           style={{padding: '3px',}}
@@ -99,7 +108,7 @@
                     />
                     <Card.Body>
                       <Card.Title>{developer.name}</Card.Title>
-                      <Card.Subtitle className="mb-2 text-muted">
+                      <Card.Subtitle className="mb-2">
                         {developer.role}
                       </Card.Subtitle>
                     </Card.Body>
@@ -109,7 +118,7 @@
             </Row>
           </Container>
         </Background>
-      </>
+      </Demo>
     );
   };
   
