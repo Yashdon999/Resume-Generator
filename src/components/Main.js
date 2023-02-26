@@ -46,7 +46,7 @@ const Button = styled.button`
   font-size: 20px;
   font-weight: bold;
   /* background-color: #10c479; */
-  background-color: #99b4ff;
+  background-color: #021547;
   color: white;
   border: none;
   border-radius: 5px;
@@ -56,8 +56,8 @@ const Button = styled.button`
 
   &:hover {
     /* background-color: #30856a; */
-    background-color: #7a9cfd;
-    color: black;
+    // background-color: #7a9cfd;
+    // color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 `;
@@ -68,7 +68,7 @@ const Button1 = styled.button`
   font-size: 20px;
   font-weight: bold;
   /* background-color: #10c479; */
-  background-color: #e7a2a2;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
@@ -78,7 +78,7 @@ const Button1 = styled.button`
 
   &:hover {
     /* background-color: #30856a; */
-    background-color: black;
+    background-color: #00000087;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }

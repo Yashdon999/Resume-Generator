@@ -12,6 +12,8 @@ const StyledForm = styled(Form)`
   justify-content: space-evenly;
   padding: 0 2rem;
   margin-top: 40px;
+  color: white;
+  font: 
 
   input[type="text"],
   input[type="email"],
@@ -47,7 +49,7 @@ const StyledForm = styled(Form)`
 
 const StyledButton = styled(Button)`
   background-color: #2f63c3;
-  box-shadow: 1px 2px 14px 0px black;
+  // box-shadow: 1px 2px 14px 0px black;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 1rem 0;
