@@ -230,9 +230,10 @@ const Main = () => {
         <MainSection className="main">
           <Button onClick={handleClick}>Create My Resume</Button>
         </MainSection>
-        <Img src="https://cdn-images.zety.com/pages/one_page_resume_templates_004.jpg" alt="Resume"/>
+        <Img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4c846170459681.5ba3e47f7e3f7.jpg" alt="Resume"/>
       </Main1>
-
+            
+            
       <Main2>
         <div>
           <Rancho>Use the best resume maker as your guide.</Rancho>

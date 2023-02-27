@@ -9,7 +9,7 @@
   `;
   
   const StyledCard = styled(Card)`
-    background-color: #b2e2c0;
+    background-color: #90c2ff;
     border-radius: 10px;
     // box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
     margin: 1rem;
@@ -25,7 +25,7 @@
     &:hover{
       /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); */
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      background-color: #4eb3a1;
+      background-color: #7bb6ff;
       color: white;
       border: none;
       // border: 5px solid black;
@@ -43,7 +43,7 @@
     // min-height: 500px;
     // display: flex;
     // align-items: center;
-    background-color:  #f8ee99;
+    background-color:  #d2ebf7;
   `;
   
   const About = () => {

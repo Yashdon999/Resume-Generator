@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const StyledForm = styled(Form)`
-  background-color: #ADEFD1FF;
+  background-color: #9fbcbf9e;
   /* border-radius: 10px; */
   font-family: Garamond, serif;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -16,7 +16,7 @@ const StyledForm = styled(Form)`
   margin-top: 40px;
   margin-left: 35px;
   margin-bottom: 35px;
-  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.22), 1px 0px 0px 0px rgba(0,0,0,0.22), 1px 2px 0px 0px rgba(0,0,0,0.22), 2px 1px 0px 0px rgba(0,0,0,0.22), 2px 3px 0px 0px rgba(0,0,0,0.22), 3px 2px 0px 0px rgba(0,0,0,0.22), 3px 4px 0px 0px rgba(0,0,0,0.22), 4px 3px 0px 0px rgba(0,0,0,0.22), 4px 5px 0px 0px rgba(0,0,0,0.22), 5px 4px 0px 0px rgba(0,0,0,0.22), 5px 6px 0px 0px rgba(0,0,0,0.22), 6px 5px 0px 0px rgba(0,0,0,0.22), 6px 7px 0px 0px rgba(0,0,0,0.22), 7px 6px 0px 0px rgba(0,0,0,0.22), 7px 8px 0px 0px rgba(0,0,0,0.22), 8px 7px 0px 0px rgba(0,0,0,0.22);
+  /* box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.22), 1px 0px 0px 0px rgba(0,0,0,0.22), 1px 2px 0px 0px rgba(0,0,0,0.22), 2px 1px 0px 0px rgba(0,0,0,0.22), 2px 3px 0px 0px rgba(0,0,0,0.22), 3px 2px 0px 0px rgba(0,0,0,0.22), 3px 4px 0px 0px rgba(0,0,0,0.22), 4px 3px 0px 0px rgba(0,0,0,0.22), 4px 5px 0px 0px rgba(0,0,0,0.22), 5px 4px 0px 0px rgba(0,0,0,0.22), 5px 6px 0px 0px rgba(0,0,0,0.22), 6px 5px 0px 0px rgba(0,0,0,0.22), 6px 7px 0px 0px rgba(0,0,0,0.22), 7px 6px 0px 0px rgba(0,0,0,0.22), 7px 8px 0px 0px rgba(0,0,0,0.22), 8px 7px 0px 0px rgba(0,0,0,0.22); */
  
 
   input[type="text"],
@@ -73,11 +73,11 @@ const StyledButton = styled(Button)`
 `;
 
 const StyledSection = styled.section`
-  /* background-image: url('https://softlinkoptions.co.ke/wp-content/uploads/2017/09/i-need-a-website-for-my-small-business-where-start1.jpg');
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.meQJ91pe0O1iqNXponnaxAHaEK%26pid%3DApi&f=1&ipt=defe23f251047203dc4a08bfd218744b5f5e92d89fff8e92f18eba786bcbc068&ipo=images');
   background-size: cover;
   background-position: center center;
-  min-height: 100vh; */
-  background-color: #00203FFF;
+  min-height: 100vh;
+  /* background-color: #00203FFF; */
 `;
 
 const Contact = () => {
