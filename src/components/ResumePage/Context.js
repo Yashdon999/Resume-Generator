@@ -8,7 +8,7 @@ export const ResumeProvider = ({ children }) => {
 
     const printElem = useRef();
 
-    const [theme, setTheme] = useState('purple.400');
+    const [theme, setTheme] = useState('blue');
 
     const [about, setAbout] = useState({
         name: "",

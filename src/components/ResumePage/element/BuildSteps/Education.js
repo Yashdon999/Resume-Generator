@@ -66,7 +66,7 @@ const Education = () => {
 
             {
                 educationList.length < 2 && (
-                    <Button colorScheme={'purple'} my={5} onClick={addMore}>Add More</Button>
+                    <Button colorScheme={'blue'} my={5} onClick={addMore}>Add More</Button>
                 )
             }
 
