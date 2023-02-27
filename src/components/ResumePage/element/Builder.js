@@ -1,6 +1,4 @@
 import { TabList, Tabs, Tab, TabPanels, TabPanel, Box, Text } from '@chakra-ui/react'
-import React, { useEffect } from 'react'
-import { useResume } from '../Context'
 import About from './BuildSteps/About'
 import Education from './BuildSteps/Education'
 import Projects from './BuildSteps/Projects'
@@ -21,7 +19,7 @@ const Builder = () => {
         >
             <Tabs isFitted variant='enclosed'>
                 <TabList>
-                    <Tab><Text fontWeight={'medium'}>About</Text></Tab>
+                    <Tab><Text fontWeight={'medium'} >About</Text></Tab>
                     <Tab><Text fontWeight={'medium'}>Education</Text></Tab>
                     <Tab><Text fontWeight={'medium'}>Skills</Text></Tab>
                     <Tab><Text fontWeight={'medium'}>Work</Text></Tab>

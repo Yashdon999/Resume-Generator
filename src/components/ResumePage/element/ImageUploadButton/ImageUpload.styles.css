@@ -8,12 +8,12 @@
   font-family: Poppins;
   font-weight: bold;
   border-radius: 6px;
-  border: 1px solid #6B46C0;
-  color: #6B46C0;
+  border: 1px solid blue;
+  color: blue;
 }
 
 .files-dropzone:hover{
-  background-color: #6B46C0;
+  background-color: blue;
   color: white;
   cursor: pointer;
   transition: all .2s ease-in-out;

@@ -39,7 +39,7 @@ const Skills = () => {
                     <FormLabel htmlFor='skill'>Add Skills</FormLabel>
                     <Input onChange={(e) => setSkill(e.target.value)} value={skill} name='skill' id='skill' type='text' variant='filled' placeholder='Skill' />
                 </FormControl>
-                <Button type='submit' colorScheme={'purple'}>Add</Button>
+                <Button type='submit' colorScheme={'blue'}>Add</Button>
             </HStack>
 
             <Box borderWidth={'1px'} rounded={'sm'} my={4} p={2}>
@@ -49,9 +49,9 @@ const Skills = () => {
                         key={index}
                         borderRadius='full'
                         variant='solid'
-                        colorScheme='purple'
+                        colorScheme='blue'
                         m={0.5}
-                        key={skill.id}
+                        // key={skill.id}
                     >
                         <TagLabel>{skill.name}</TagLabel>
                         <TagCloseButton onClick={() => deleteSkill(skill.id)} />

@@ -1,4 +1,4 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, FormControl, FormLabel, HStack, Input, NumberDecrementStepper, NumberIncrementStepper, NumberInput, NumberInputField, NumberInputStepper, VStack, Textarea, Select, Text } from '@chakra-ui/react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Input, VStack, Textarea, Text } from '@chakra-ui/react'
 import { useResume } from '../../Context';
 import { v4 as uuidv4 } from 'uuid';
 import { MdDelete } from 'react-icons/md';
@@ -57,7 +57,7 @@ const Projects = () => {
 
             {
                 projects.length < 4 && (
-                    <Button colorScheme={'purple'} my={5} onClick={addMore}>Add More</Button>
+                    <Button colorScheme={'blue'} my={5} onClick={addMore}>Add More</Button>
                 )
             }
         </>
