@@ -1,19 +1,27 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import styled from 'styled-components';
-import { NavLink, Link } from 'react-router-dom';
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import styled from "styled-components";
+import { NavLink, Link } from "react-router-dom";
 
 function Header() {
   return (
     <StyledNavbar sticky="top" bg="light" expand="lg">
       <Container fluid>
-        <StyledNavbar.Brand as={Link} to="/">Resume Generator</StyledNavbar.Brand>
+        <StyledNavbar.Brand as={Link} to="/">
+          Resume Generator
+        </StyledNavbar.Brand>
         <StyledNavbar.Toggle aria-controls="navbarScroll" />
         <StyledNavbar.Collapse id="navbarScroll">
           <NavLinks>
-            <StyledNavLink exact as={NavLink} to="/">Home</StyledNavLink>
-            <StyledNavLink as={NavLink} to="/about">About</StyledNavLink>
-            <StyledNavLink as={NavLink} to="/contact">Contact</StyledNavLink>
+            <StyledNavLink exact as={NavLink} to="/">
+              Home
+            </StyledNavLink>
+            <StyledNavLink as={NavLink} to="/about">
+              About
+            </StyledNavLink>
+            <StyledNavLink as={NavLink} to="/contact">
+              Contact
+            </StyledNavLink>
           </NavLinks>
         </StyledNavbar.Collapse>
       </Container>
@@ -23,8 +31,9 @@ function Header() {
 
 const StyledNavbar = styled(Navbar)`
   padding: 1rem 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  background-color: #fff; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #fff;
   border-bottom: 1px solid #e4e4e4;
 
   @media screen and (max-width: 991.98px) {
