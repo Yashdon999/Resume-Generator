@@ -15,7 +15,7 @@ const Main1 = styled.div`
 `;
 
 const Rap = styled.p`
-  font-Size: 16px;
+  font-size: 16px;
   margin-top: 10px;
 `;
 
@@ -62,7 +62,6 @@ const Button = styled.button`
   }
 `;
 
-
 const Button1 = styled.button`
   padding: 15px 35px;
   font-size: 20px;
@@ -86,19 +85,16 @@ const Button1 = styled.button`
 
 // font-family: Garamond, serif;
 
-
 const Img = styled.img`
-width: 700px; 
-height: 400px; 
-object-fit: cover;
-object-position: 25% 25%; 
-@media (max-width: 768px) {
-  width: 100%;
-  height: auto;
-}
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 25% 25%;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
 `;
-
-
 
 const ImageSection = styled.div`
   width: 50%;
@@ -119,12 +115,11 @@ const Main2 = styled.div`
   padding: 70px;
   @media (max-width: 768px) {
     padding: 30px;
-   
-  /* Hide the image when the screen size is less than or equal to 768px */
-  ${ImageSection} {
-   display: none;
-  
-}
+
+    /* Hide the image when the screen size is less than or equal to 768px */
+    ${ImageSection} {
+      display: none;
+    }
   }
 `;
 
@@ -149,7 +144,6 @@ const Pilo = styled.p`
     text-align: center;
     margin-top: 10px;
   }
-  
 `;
 
 const Main3 = styled.div`
@@ -171,7 +165,7 @@ const Rancho1 = styled.h1`
   font-family: Garamond, serif;
   text-align: center;
   flex: 1;
-  
+
   @media (max-width: 768px) {
     font-size: 30px;
   }
@@ -212,7 +206,6 @@ const Img1 = styled.img`
   }
 `;
 
-
 const Main = () => {
   const navigate = useNavigate();
 
@@ -220,27 +213,31 @@ const Main = () => {
     navigate("/resume");
   };
 
-  return (<>
-    
-    <Main1>
-        <Rap >
-        ONLINE RESUME BUILDER
-        </Rap>
-        <Heading>You have the skills, now make your resume reflect them. Be one of the chosen 2%.</Heading>
+  return (
+    <>
+      <Main1>
+        <Rap>ONLINE RESUME BUILDER</Rap>
+        <Heading>
+          You have the skills, now make your resume reflect them. Be one of the
+          chosen 2%.
+        </Heading>
         <MainSection className="main">
           <Button onClick={handleClick}>Create My Resume</Button>
         </MainSection>
-        <Img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4c846170459681.5ba3e47f7e3f7.jpg" alt="Resume"/>
+        <Img
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4c846170459681.5ba3e47f7e3f7.jpg"
+          alt="Resume"
+        />
       </Main1>
-            
-            
+
       <Main2>
         <div>
           <Rancho>Use the best resume maker as your guide.</Rancho>
           <Pilo>
-            Getting that dream job can seem like an impossible task. We’re here to change that. Give
-            yourself a real advantage with the best online resume maker: created by experts, improved
-            by data, trusted by millions of professionals
+            Getting that dream job can seem like an impossible task. We’re here
+            to change that. Give yourself a real advantage with the best online
+            resume maker: created by experts, improved by data, trusted by
+            millions of professionals
           </Pilo>
         </div>
         <ImageSection>
@@ -251,12 +248,17 @@ const Main = () => {
         </ImageSection>
       </Main2>
       <Main3>
-      <Rancho1>Take your job search to the next level with our top-rated resume builder.</Rancho1>
-          <Pilo1>
-          Say goodbye to writer's block and endless formatting woes with our 3-step resume builder. Create a perfect resume in minutes that will catch employers' attention!
-          </Pilo1>
-            <Button1 onClick={handleClick}>Create Resume Now</Button1>
-          <ImageSection1>
+        <Rancho1>
+          Take your job search to the next level with our top-rated resume
+          builder.
+        </Rancho1>
+        <Pilo1>
+          Say goodbye to writer's block and endless formatting woes with our
+          3-step resume builder. Create a perfect resume in minutes that will
+          catch employers' attention!
+        </Pilo1>
+        <Button1 onClick={handleClick}>Create Resume Now</Button1>
+        <ImageSection1>
           <Img1
             src="https://resume-example.com/wp-content/uploads/2021/03/resumes-templates.png"
             alt="Resume2"

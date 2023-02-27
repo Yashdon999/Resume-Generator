@@ -1,7 +1,7 @@
-.files-dropzone{
+.files-dropzone {
   display: flex;
   width: 100%;
-  
+
   justify-content: center;
   align-items: center;
   height: 40px;
@@ -12,10 +12,10 @@
   color: blue;
 }
 
-.files-dropzone:hover{
+.files-dropzone:hover {
   background-color: blue;
   color: white;
   cursor: pointer;
-  transition: all .2s ease-in-out;
--webkit-transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }

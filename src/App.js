@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import About from "./components/About";
@@ -22,6 +22,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-};
+}
 
 export default App;

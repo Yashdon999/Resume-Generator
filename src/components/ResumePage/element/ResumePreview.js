@@ -18,15 +18,14 @@ import { BiLinkExternal } from "react-icons/bi";
 const ResumePreview = () => {
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
-    const imgStyle = {
-      width:"115px",
-      height:"115px",
-     
-      margin:"15px",
+  const imgStyle = {
+    width: "115px",
+    height: "115px",
 
-      borderRadius: "50%",
-     
-    };
+    margin: "15px",
+
+    borderRadius: "50%",
+  };
   return (
     <>
       <Box
@@ -40,12 +39,7 @@ const ResumePreview = () => {
         <div ref={printElem}>
           <HStack>
             {about.picture && (
-              <img
-                style={imgStyle}
-                
-                src={about.picture}
-                alt="avatar"
-              />
+              <img style={imgStyle} src={about.picture} alt="avatar" />
             )}
 
             <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
@@ -66,7 +60,9 @@ const ResumePreview = () => {
           >
             <HStack spacing={1}>
               <MdMail />{" "}
-              <Text>{about.email ? about.email : "thechosenone@hogwarts.edu"}</Text>
+              <Text>
+                {about.email ? about.email : "thechosenone@hogwarts.edu"}
+              </Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocalPhone />{" "}
@@ -112,10 +108,14 @@ const ResumePreview = () => {
                       pb={2}
                     >
                       <Text fontWeight={"medium"}>
-                        {degree ? degree : "Bachelor of Wizarding Science in Computer Engineering"}
+                        {degree
+                          ? degree
+                          : "Bachelor of Wizarding Science in Computer Engineering"}
                       </Text>
                       <Text fontSize={"sm"}>
-                        {school ? school : "Hogwarts School of Witchcraft and Wizardry"}
+                        {school
+                          ? school
+                          : "Hogwarts School of Witchcraft and Wizardry"}
                       </Text>
                       <HStack
                         fontSize={"xs"}
