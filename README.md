@@ -1,4 +1,4 @@
-<h2 align="center"><b>Owner: <a href="https://github.com/Yashdon999">YASH 🇮🇳</a></b></h2>
+<h2 align="center"><b>Owner: <a href="https://github.com/Yashdon999">Maku Gang 🇮🇳</a></b></h2>
 <br>
 <p align="center"><img src="https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1625166167/1625166166.jpg"></a></p> 
 </p>
