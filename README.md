@@ -49,7 +49,12 @@ To use this project locally, follow these steps:
 
 3. Install dependencies:
 
-`npm install`
+`npm install` 
+
+If `npm install` does not work, try using:
+
+`npm i --legacy-peer-deps`
+
 
 4. Start the development server:
 
