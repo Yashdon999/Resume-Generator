@@ -95,7 +95,7 @@ const Contact = () => {
         <Row className="d-flex align-items-center justify-content-center">
           <Col md={{ span:8 }}>
             <StyledForm>
-              <h2 className="text-center mt-4 mb-3" style={{fontSize:"40px", fontWeight: "700"}}>Get in Touch</h2>
+              <h2 className="text-center mt-4 mb-3" style={{fontSize:"45px", fontWeight: "700"}}>Get in Touch</h2>
               <Form.Group controlId="formBasicName" >
                 <Form.Label >Name</Form.Label>
                 <Form.Control type="text" placeholder="Enter your name" />

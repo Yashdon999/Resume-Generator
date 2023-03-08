@@ -35,11 +35,12 @@ code {
   font-size: 16px !important;
   margin: 0 !important;
   background: transparent !important;
+  transition: all 0.4s ease-out;
 }
 
 .form-control:focus{
   border: none !important;
-  border-bottom: 2px solid gray!important;
+  border-bottom: 2px solid #00dbde!important;
   box-shadow: none !important;
 }
 
@@ -54,8 +55,11 @@ code {
   background:#021547 !important;
   border-radius: 100px !important;
   padding: 10px 0px !important;
-  margin: 30px 0px !important;
+  margin: 50px 0px !important;
+  transition: all 0.6s ease-out;
 }
 .form_button:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #00dbde !important;
+  color: black !important;
 }
