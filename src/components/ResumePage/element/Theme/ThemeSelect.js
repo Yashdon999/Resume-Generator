@@ -69,7 +69,21 @@ const ThemeSelect = () => {
         }}
       ></div>
       {showColorPicker && (
-        <ChromePicker color={customColor} onChange={handleCustomColorChange} />
+        <div
+          style={{
+            position: "absolute",
+            zIndex: "2",
+            top: "100px",
+            right: "0px",
+            bottom: "0px",
+            left: "450px"
+          }}
+        >
+          <ChromePicker
+            color={customColor}
+            onChange={handleCustomColorChange}
+          />
+        </div>
       )}
     </HStack>
   );
