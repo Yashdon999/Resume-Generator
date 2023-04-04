@@ -1,5 +1,5 @@
 import { HStack, useRadioGroup } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ChromePicker } from "react-color";
 import { useResume } from "../../Context";
 import ThemeOption from "./ThemeOption";
@@ -8,6 +8,7 @@ const ThemeSelect = () => {
   const [showColorPicker, setShowColorPicker] = useState(false);
   const [customColor, setCustomColor] = useState("#FFFFFF");
   const { theme, setTheme } = useResume();
+  const ref = useRef()
   const options = [
     "blue",
     "purple.400",
@@ -33,6 +34,22 @@ const ThemeSelect = () => {
   const handleShowColorPicker = () => {
     setShowColorPicker(!showColorPicker);
   };
+
+  useEffect(() => {
+    const checkIfClickedOutside = e => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      if (showColorPicker && ref.current && !ref.current.contains(e.target)) {
+        setShowColorPicker(!showColorPicker)
+      }
+    }
+    document.addEventListener("mousedown", checkIfClickedOutside)
+    
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", checkIfClickedOutside)
+    }
+  }, [showColorPicker])
 
   return (
     <HStack
@@ -66,10 +83,28 @@ const ThemeSelect = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          position: "relative"
         }}
       ></div>
       {showColorPicker && (
-        <ChromePicker color={customColor} onChange={handleCustomColorChange} />
+        <div
+          style={{
+            position: "absolute",
+            zIndex: "2",
+            top: "10%",
+            left: "32%",
+            margin: 0,
+            width: "fit-content",
+            height: "fit-content"
+          }
+        }
+        ref={ref}
+        >
+          <ChromePicker
+            color={customColor}
+            onChange={handleCustomColorChange}
+          />
+        </div>
       )}
     </HStack>
   );
