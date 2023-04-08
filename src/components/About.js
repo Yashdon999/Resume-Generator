@@ -61,39 +61,15 @@ const About = () => {
     },
     {
       id: 3,
-      name: "Om Ingle",
-      role: "The (quality) tester",
-      image: "https://avatars.githubusercontent.com/u/109346115?v=4",
-    },
-    {
-      id: 4,
       name: "Shashwat Agrawal",
       role: "Full Stack Web Developer",
       image: "https://avatars.githubusercontent.com/u/72117025?v=4",
     },
     {
-      id: 5,
+      id: 4,
       name: "Yash Vyavahare",
       role: "UI/UX Designer",
       image: "https://avatars.githubusercontent.com/u/104668751?v=4",
-    },
-    {
-      id: 6,
-      name: "Rani Chavan",
-      role: "Marketing",
-      image: "https://avatars.githubusercontent.com/u/126545539?v=4",
-    },
-    {
-      id: 7,
-      name: "Bhumika Patil",
-      role: "Marketing",
-      image: "https://avatars.githubusercontent.com/u/126545476?v=4",
-    },
-    {
-      id: 8,
-      name: "Harshal Patond",
-      role: "Professional Information Gatherer",
-      image: "https://avatars.githubusercontent.com/u/93530855?v=4",
     },
   ];
 
