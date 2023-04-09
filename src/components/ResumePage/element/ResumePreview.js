@@ -14,16 +14,16 @@ import { useResume } from "../Context";
 import { MdMail, MdLocalPhone, MdLocationPin } from "react-icons/md";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
-
+import myIamge from "./Ceo.jpeg";
 const ResumePreview = () => {
+ 
+
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
   const imgStyle = {
     width: "115px",
     height: "115px",
-
     margin: "15px",
-
     borderRadius: "50%",
   };
   return (
@@ -37,20 +37,23 @@ const ResumePreview = () => {
         minH={"100vh"}
       >
         <div ref={printElem}>
-          <HStack>
-            {about.picture && (
-              <img style={imgStyle} src={about.picture} alt="avatar" />
-            )}
+        <HStack>
+  {about.picture ? (
+    <img style={imgStyle} src={about.picture} alt="avatar" />
+  ) : (
+    <img style={imgStyle} src={myIamge} alt="avatar" />
+  )}
 
-            <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
-              <Heading as="h4" size="md">
-                {about.name ? about.name : "Harry Potter"}
-              </Heading>
-              <Text color={"gray.500"}>
-                {about.role ? about.role : "Full Stack Web Developer"}
-              </Text>
-            </VStack>
-          </HStack>
+  <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
+    <Heading as="h4" size="md">
+      {about.name ? about.name : "Harry Potter"}
+    </Heading>
+    <Text color={"gray.500"}>
+      {about.role ? about.role : "Full Stack Web Developer"}
+    </Text>
+  </VStack>
+</HStack>
+
 
           <HStack
             bg={theme}
@@ -61,12 +64,12 @@ const ResumePreview = () => {
             <HStack spacing={1}>
               <MdMail />{" "}
               <Text>
-                {about.email ? about.email : "thechosenone@hogwarts.edu"}
+                {about.email ? about.email : "HarryPotter@hogwarts.edu"}
               </Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocalPhone />{" "}
-              <Text>{about.phone ? about.phone : "+918559584846"}</Text>
+              <Text>{about.phone ? about.phone : "+910000000000"}</Text>
             </HStack>
             <HStack spacing={1}>
               <MdLocationPin />{" "}
@@ -79,6 +82,18 @@ const ResumePreview = () => {
               </Text>
             </HStack>
           </HStack>
+
+     
+          <Box mt={6}>
+            <VStack alignItems={"flex-start"} px={4}>
+              <Heading as="h4" size="md" color={"gray.700"}>
+                About Me
+              </Heading>
+              <Text color={"gray.600"}>{about.aboutMe ? about.aboutMe: "I am a skilled wizard, trained in the art of magical application development. Using the latest incantations and spells, I create enchanting web applications that are both visually stunning and functionally powerful. My focus on precision and quality magic ensures that every product I create is worthy of the highest praise from even the most critical of magical authorities."}</Text>
+            </VStack>
+          </Box>
+
+
 
           <HStack
             w={"full"}
@@ -106,6 +121,7 @@ const ResumePreview = () => {
                       alignItems={"flex-start"}
                       w={"full"}
                       pb={2}
+                      color={"gray.600"}
                     >
                       <Text fontWeight={"medium"}>
                         {degree
@@ -154,6 +170,7 @@ const ResumePreview = () => {
                       alignItems={"flex-start"}
                       lineHeight={1.3}
                       pb={2}
+                      color={"gray.600"}
                     >
                       <Text fontWeight={"medium"}>
                         {position ? position : "Full Stack Developer"}
@@ -212,6 +229,7 @@ const ResumePreview = () => {
                       alignItems={"flex-start"}
                       lineHeight={1.3}
                       pb={2}
+                      color={"gray.600"}
                     >
                       <HStack as="a" href={url} target="_blank" spacing={0.5}>
                         <Text fontWeight={"medium"} flex={"row"}>
