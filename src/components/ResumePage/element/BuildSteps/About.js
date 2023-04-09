@@ -5,6 +5,7 @@ import {
   Input,
   Stack,
   Button,
+  Textarea,
 } from "@chakra-ui/react";
 import React from "react";
 import { useResume } from "../../Context";
@@ -109,6 +110,18 @@ const About = () => {
             />
           </FormControl>
         </HStack>
+
+        <FormControl>
+          <FormLabel htmlFor="aboutMe">About Me</FormLabel>
+          <Textarea
+            onChange={(e) => handleChange(e)}
+            name="aboutMe"
+            id="aboutMe"
+            variant="filled"
+            placeholder="Write a summary about yourself"
+          />
+        </FormControl>
+
       </Stack>
     </>
   );
