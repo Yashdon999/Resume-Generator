@@ -63,3 +63,8 @@ code {
   background: #00dbde !important;
   color: black !important;
 }
+
+.css-1xlkkeq:focus, .css-1xlkkeq[data-focus]{
+  z-index: 1;
+  box-shadow: none !important;
+}
