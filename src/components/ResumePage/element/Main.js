@@ -1,10 +1,10 @@
-import { Box, Container, Stack, Heading, Button } from "@chakra-ui/react";
+import { Box, Container, Stack, Heading, Button, IconButton } from "@chakra-ui/react";
 import Builder from "./Builder";
 import ResumePreview from "./ResumePreview";
 import ThemeSelect from "./Theme/ThemeSelect";
 import { useReactToPrint } from "react-to-print";
 import { useResume } from "../Context";
-import { MdOutlineFileDownload } from "react-icons/md";
+import { MdOutlineFileDownload, MdShare } from "react-icons/md";
 
 const Main = () => {
   const { printElem } = useResume();
@@ -12,6 +12,10 @@ const Main = () => {
   const handlePrint = useReactToPrint({
     content: () => printElem.current,
   });
+
+  const handleShare = () => {
+    // Logic to share the content
+  }
 
   return (
     <Container bg={"gray.50"} minW={"full"} py={10} id="builder">
@@ -33,13 +37,20 @@ const Main = () => {
           direction={{ base: "column", sm: "row" }}
         >
           <ThemeSelect />
-          <Button
-            rightIcon={<MdOutlineFileDownload />}
-            onClick={handlePrint}
-            colorScheme={"blue"}
-          >
-            Download
-          </Button>
+          <Stack direction={"row"} spacing={2}>
+            <IconButton
+              icon={<MdOutlineFileDownload />}
+              onClick={handlePrint}
+              colorScheme={"blue"}
+              aria-label="Download"
+            />
+            <IconButton
+              icon={<MdShare />}
+              onClick={handleShare}
+              colorScheme={"blue"}
+              aria-label="Share"
+            />
+          </Stack>
         </Stack>
       </Container>
 
@@ -58,13 +69,20 @@ const Main = () => {
 
       {/* Add a media query for smaller screens */}
       <Box display={{ base: "block", md: "none" }} textAlign="center" mt={8}>
-        <Button
-          rightIcon={<MdOutlineFileDownload />}
-          onClick={handlePrint}
-          colorScheme={"blue"}
-        >
-          Download
-        </Button>
+        <Stack direction={"row"} spacing={2}>
+          <IconButton
+            icon={<MdOutlineFileDownload />}
+            onClick={handlePrint}
+            colorScheme={"blue"}
+            aria-label="Download"
+          />
+          <IconButton
+            icon={<MdShare />}
+            onClick={handleShare}
+            colorScheme={"blue"}
+            aria-label="Share"
+          />
+        </Stack>
       </Box>
     </Container>
   );
