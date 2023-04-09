@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import styled from "styled-components";
 import { NavLink, Link } from "react-router-dom";
+import githubLogo from "./images/github.png"; // import the GitHub logo image
 
 function Header() {
   return (
@@ -23,6 +24,9 @@ function Header() {
               Contact
             </StyledNavLink>
           </NavLinks>
+          <GitHubLink href="https://github.com/Yashdon999/Resume-Generator">
+            <img src={githubLogo} alt="GitHub logo" />
+          </GitHubLink>
         </StyledNavbar.Collapse>
       </Container>
     </StyledNavbar>
@@ -48,6 +52,7 @@ const StyledNavbar = styled(Navbar)`
 const NavLinks = styled.nav`
   display: flex;
   align-items: center;
+  flex: 1; /* make the NavLinks component take up all remaining space */
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -66,6 +71,24 @@ const StyledNavLink = styled(NavLink)`
 
   @media screen and (max-width: 767.98px) {
     margin: 0.5rem;
+  }
+`;
+
+const GitHubLink = styled.a`
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* push the GitHub logo to the left side of the header */
+  color: #333;
+  font-weight: 500;
+  &:hover {
+    color: #555;
+    text-decoration: none;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
   }
 `;
 
