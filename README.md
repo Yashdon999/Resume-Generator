@@ -49,12 +49,11 @@ To use this project locally, follow these steps:
 
 3. Install dependencies:
 
-`npm install` 
+`npm install`
 
 If `npm install` does not work, try using:
 
 `npm i --legacy-peer-deps`
-
 
 4. Start the development server:
 
@@ -81,4 +80,3 @@ https://resume-genrator.vercel.app/
 Pay us using
 
 <img src="https://pbs.twimg.com/profile_images/1329113828731146242/FzxBBPrs_400x400.jpg" width="40" height="40">
-

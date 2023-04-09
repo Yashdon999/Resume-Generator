@@ -8,7 +8,7 @@ const ThemeSelect = () => {
   const [showColorPicker, setShowColorPicker] = useState(false);
   const [customColor, setCustomColor] = useState("#FFFFFF");
   const { theme, setTheme } = useResume();
-  const ref = useRef()
+  const ref = useRef();
   const options = [
     "blue",
     "purple.400",
@@ -36,20 +36,20 @@ const ThemeSelect = () => {
   };
 
   useEffect(() => {
-    const checkIfClickedOutside = e => {
+    const checkIfClickedOutside = (e) => {
       // If the menu is open and the clicked target is not within the menu,
       // then close the menu
       if (showColorPicker && ref.current && !ref.current.contains(e.target)) {
-        setShowColorPicker(!showColorPicker)
+        setShowColorPicker(!showColorPicker);
       }
-    }
-    document.addEventListener("mousedown", checkIfClickedOutside)
-    
+    };
+    document.addEventListener("mousedown", checkIfClickedOutside);
+
     return () => {
       // Cleanup the event listener
-      document.removeEventListener("mousedown", checkIfClickedOutside)
-    }
-  }, [showColorPicker])
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [showColorPicker]);
 
   return (
     <HStack
@@ -83,7 +83,7 @@ const ThemeSelect = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          position: "relative"
+          position: "relative",
         }}
       ></div>
       {showColorPicker && (
@@ -95,10 +95,9 @@ const ThemeSelect = () => {
             left: "32%",
             margin: 0,
             width: "fit-content",
-            height: "fit-content"
-          }
-        }
-        ref={ref}
+            height: "fit-content",
+          }}
+          ref={ref}
         >
           <ChromePicker
             color={customColor}

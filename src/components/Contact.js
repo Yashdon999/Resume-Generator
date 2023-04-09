@@ -8,7 +8,7 @@ const StyledForm = styled(Form)`
   background: white;
   /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
   /* backdrop-filter: blur(20px); */
-  color: #1A202C;
+  color: #1a202c;
   border-radius: 10px;
   /* font-family: Garamond, serif; */
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@ const StyledButton = styled(Button)`
 
 const StyledSection = styled.section`
   /* background-image: url(); */
-  background:linear-gradient(45deg,#cff2ff,#00dbde);
+  background: linear-gradient(45deg, #cff2ff, #00dbde);
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
@@ -93,23 +93,28 @@ const Contact = () => {
     <StyledSection id="contact">
       <Container>
         <Row className="d-flex align-items-center justify-content-center">
-          <Col md={{ span:8 }}>
+          <Col md={{ span: 8 }}>
             <StyledForm>
-              <h2 className="text-center mt-4 mb-3" style={{fontSize:"45px", fontWeight: "700"}}>Get in Touch</h2>
-              <Form.Group controlId="formBasicName" >
-                <Form.Label >Name</Form.Label>
+              <h2
+                className="text-center mt-4 mb-3"
+                style={{ fontSize: "45px", fontWeight: "700" }}
+              >
+                Get in Touch
+              </h2>
+              <Form.Group controlId="formBasicName">
+                <Form.Label>Name</Form.Label>
                 <Form.Control type="text" placeholder="Enter your name" />
               </Form.Group>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label >Email address</Form.Label>
+                <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
               </Form.Group>
               <Form.Group controlId="formBasicSubject">
-                <Form.Label >Subject</Form.Label>
+                <Form.Label>Subject</Form.Label>
                 <Form.Control type="text" placeholder="Enter subject" />
               </Form.Group>
               <Form.Group controlId="formBasicMessage">
-                <Form.Label >Message</Form.Label>
+                <Form.Label>Message</Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={4}
