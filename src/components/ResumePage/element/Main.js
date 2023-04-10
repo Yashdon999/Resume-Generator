@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Heading, Button, IconButton } from "@chakra-ui/react";
+import { Box, Container, Stack, Heading, IconButton } from "@chakra-ui/react";
 import Builder from "./Builder";
 import ResumePreview from "./ResumePreview";
 import ThemeSelect from "./Theme/ThemeSelect";

@@ -15,8 +15,9 @@ import { MdMail, MdLocalPhone, MdLocationPin } from "react-icons/md";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import myIamge from "./Ceo.jpeg";
-
 const ResumePreview = () => {
+ 
+
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
   const imgStyle = {
@@ -36,44 +37,63 @@ const ResumePreview = () => {
         minH={"100vh"}
       >
         <div ref={printElem}>
-          {/* Main Header section which contain image & some personal information */}
-          <HStack justifyContent="space-between">
-            <VStack m={4} alignItems="flex-start" spacing={0.5}>
-              <Heading as="h4" size="md">
-                {about.name ? about.name : "Harry Potter"}
-              </Heading>
-              <Text color={theme} fontWeight={"bold"}>
-                {about.role ? about.role : "Full Stack Web Developer"}
+        <HStack>
+  {about.picture ? (
+    <img style={imgStyle} src={about.picture} alt="avatar" />
+  ) : (
+    <img style={imgStyle} src={myIamge} alt="avatar" />
+  )}
+
+  <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
+    <Heading as="h4" size="md">
+      {about.name ? about.name : "Harry Potter"}
+    </Heading>
+    <Text color={"gray.500"}>
+      {about.role ? about.role : "Full Stack Web Developer"}
+    </Text>
+  </VStack>
+</HStack>
+
+
+          <HStack
+            bg={theme}
+            color={"white"}
+            p={4}
+            justifyContent={"space-between"}
+          >
+            <HStack spacing={1}>
+              <MdMail />{" "}
+              <Text>
+                {about.email ? about.email : "HarryPotter@hogwarts.edu"}
               </Text>
-              <HStack justifyContent={"space-between"}>
-                <HStack spacing={1}>
-                  <MdMail />{" "}
-                  <Text>
-                    {about.email ? about.email : "HarryPotter@hogwarts.edu"}
-                  </Text>
-                </HStack>
-                <HStack spacing={1}>
-                  <MdLocalPhone />{" "}
-                  <Text>{about.phone ? about.phone : "+910000000000"}</Text>
-                </HStack>
-                <HStack spacing={1}>
-                  <MdLocationPin />{" "}
-                  <Text>{about.address ? about.address : "Pune, MH"}</Text>
-                </HStack>
-                <HStack spacing={1}>
-                  <RiLinkedinBoxFill />{" "}
-                  <Text as="a" href={about.linkedin}>
-                    LinkedIn
-                  </Text>
-                </HStack>
-              </HStack>
-            </VStack>
-            {about.picture ? (
-              <img style={imgStyle} src={about.picture} alt="avatar" />
-            ) : (
-              <img style={imgStyle} src={myIamge} alt="avatar" />
-            )}
+            </HStack>
+            <HStack spacing={1}>
+              <MdLocalPhone />{" "}
+              <Text>{about.phone ? about.phone : "+910000000000"}</Text>
+            </HStack>
+            <HStack spacing={1}>
+              <MdLocationPin />{" "}
+              <Text>{about.address ? about.address : "Pune, MH"}</Text>
+            </HStack>
+            <HStack spacing={1}>
+              <RiLinkedinBoxFill />{" "}
+              <Text as="a" href={about.linkedin}>
+                LinkedIn
+              </Text>
+            </HStack>
           </HStack>
+
+     
+          <Box mt={6}>
+            <VStack alignItems={"flex-start"} px={4}>
+              <Heading as="h4" size="md" color={"gray.700"}>
+                About Me
+              </Heading>
+              <Text color={"gray.600"}>{about.aboutMe ? about.aboutMe: "I am a skilled wizard, trained in the art of magical application development. Using the latest incantations and spells, I create enchanting web applications that are both visually stunning and functionally powerful. My focus on precision and quality magic ensures that every product I create is worthy of the highest praise from even the most critical of magical authorities."}</Text>
+            </VStack>
+          </Box>
+
+
 
           <HStack
             w={"full"}
@@ -86,27 +106,12 @@ const ResumePreview = () => {
             spacing={1}
           >
             <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={6}>
-              {/* Summary */}
-              <VStack alignItems={"flex-start"}>
-                <Box borderBottom="3px solid gray" w="100%">
-                  <Heading as="h4" size="md" color="gray.700">
-                    Summary
-                  </Heading>
-                </Box>
-
-                <Text color={"gray.600"}>
-                  {about.aboutMe
-                    ? about.aboutMe
-                    : "I am a skilled wizard, trained in the art of magical application development. Using the latest incantations and spells, I create enchanting web applications that are both visually stunning and functionally powerful. My focus on precision and quality magic ensures that every product I create is worthy of the highest praise from even the most critical of magical authorities."}
-                </Text>
-              </VStack>
               {/* EDUCATION */}
               <VStack alignItems={"flex-start"}>
-                <Box borderBottom="3px solid gray" w="100%">
-                  <Heading as="h4" size="md" color="gray.700">
-                    Education
-                  </Heading>
-                </Box>
+                <Heading as="h4" size="md" color={"gray.700"}>
+                  EDUCATION
+                </Heading>
+
                 {educationList.map((education) => {
                   const { degree, school, startYr, endYr, grade } = education;
 
@@ -115,9 +120,10 @@ const ResumePreview = () => {
                       spacing={0}
                       alignItems={"flex-start"}
                       w={"full"}
+                      pb={2}
                       color={"gray.600"}
                     >
-                      <Text fontWeight={"bold"} color={theme} mb={0}>
+                      <Text fontWeight={"medium"}>
                         {degree
                           ? degree
                           : "Bachelor of Wizarding Science in Computer Engineering"}
@@ -144,11 +150,9 @@ const ResumePreview = () => {
               </VStack>
               {/* EDUCATION WORK EXPERIENCE */}
               <VStack alignItems={"flex-start"}>
-                <Box borderBottom="3px solid gray" w="100%">
-                  <Heading as="h4" size="md" color="gray.700">
-                    Work Experience
-                  </Heading>
-                </Box>
+                <Heading as="h4" size="md" color={"gray.700"}>
+                  WORK EXPERIENCE
+                </Heading>
 
                 {workList.map((work) => {
                   const {
@@ -165,12 +169,13 @@ const ResumePreview = () => {
                       spacing={0.5}
                       alignItems={"flex-start"}
                       lineHeight={1.3}
+                      pb={2}
                       color={"gray.600"}
                     >
-                      <Text fontWeight={"bold"} color={theme} mb={0}>
+                      <Text fontWeight={"medium"}>
                         {position ? position : "Full Stack Developer"}
                       </Text>
-                      <Text fontSize={"sm"} fontWeight={"bold"} color={theme}>
+                      <Text fontSize={"sm"}>
                         {company ? company : "Nimbus Network Solutions"} -{" "}
                         {type ? type : "Full-time"}
                       </Text>
@@ -191,26 +196,11 @@ const ResumePreview = () => {
             </VStack>
 
             <VStack mx={2} alignItems={"flex-start"} w={"full"} spacing={6}>
-              {/* Objectives */}
-              <VStack alignItems={"flex-start"}>
-                <Box borderBottom="3px solid gray" w="100%">
-                  <Heading as="h4" size="md" color="gray.700">
-                    Objectives
-                  </Heading>
-                </Box>
-                <Text color={"gray.600"}>
-                  {about.objectives
-                    ? about.objectives
-                    : "To leverage my skills in magical application development to create visually stunning and functionally powerful web applications that meet the highest standards of quality and exceed the expectations of even the most critical magical authorities."}
-                </Text>
-              </VStack>
               {/* SKILLS */}
               <VStack alignItems={"flex-start"}>
-                <Box borderBottom="3px solid gray" w="100%">
-                  <Heading as="h4" size="md" color="gray.700">
-                    Skills
-                  </Heading>
-                </Box>
+                <Heading as="h4" size="md" color={"gray.700"}>
+                  SKILLS
+                </Heading>
                 <Wrap>
                   {skills.map((skill, index) => (
                     <Tag
@@ -227,11 +217,10 @@ const ResumePreview = () => {
               </VStack>
               {/* SKILLS PROJECTS */}
               <VStack alignItems={"flex-start"}>
-                <Box borderBottom="3px solid gray" w="100%">
-                  <Heading as="h4" size="md" color="gray.700">
-                    Projects
-                  </Heading>
-                </Box>
+                <Heading as="h4" size="md" color={"gray.700"}>
+                  PROJECTS
+                </Heading>
+
                 {projects.map((project) => {
                   const { name, url, description: desc } = project;
                   return (
@@ -239,6 +228,7 @@ const ResumePreview = () => {
                       spacing={0.5}
                       alignItems={"flex-start"}
                       lineHeight={1.3}
+                      pb={2}
                       color={"gray.600"}
                     >
                       <HStack as="a" href={url} target="_blank" spacing={0.5}>
@@ -260,6 +250,7 @@ const ResumePreview = () => {
                   );
                 })}
               </VStack>
+              {/* PROJECTS */}
             </VStack>
           </HStack>
         </div>
