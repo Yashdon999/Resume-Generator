@@ -8,7 +8,6 @@
 <br>
 
 [![Private Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/Yashdon999/Resume-Genrator)
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg?&style=flat-square)](https://github.com/Yashdon999/Resume-Genrator/blob/main/LICENSE)
 
 <br>
 
