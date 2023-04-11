@@ -23,6 +23,9 @@ function Header() {
             <StyledNavLink as={NavLink} to="/contact">
               Contact
             </StyledNavLink>
+            <StyledNavLink as={NavLink} to="/study">
+              Study
+            </StyledNavLink>
           </NavLinks>
           <GitHubLink href="https://github.com/Yashdon999/Resume-Generator">
             <img src={githubLogo} alt="GitHub logo" />

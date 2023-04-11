@@ -371,7 +371,7 @@ const Main = () => {
         <Text>Do you write React code?</Text>
         <Equal>=</Equal>
         <Icon src={github} alt="Code Icon" />
-        <Button5>Contribute</Button5>
+        <Button5> <a href="https://github.com/Yashdon999/Resume-Generator">Contribute</a></Button5>
     </MainSection5>
     </>
   );
