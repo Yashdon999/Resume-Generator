@@ -111,17 +111,28 @@ const About = () => {
           </FormControl>
         </HStack>
 
-        <FormControl>
-          <FormLabel htmlFor="aboutMe">About Me</FormLabel>
-          <Textarea
-            onChange={(e) => handleChange(e)}
-            name="aboutMe"
-            id="aboutMe"
-            variant="filled"
-            placeholder="Write a summary about yourself"
-          />
-        </FormControl>
-
+        <HStack>
+          <FormControl>
+            <FormLabel htmlFor="aboutMe">About Me</FormLabel>
+            <Textarea
+              onChange={(e) => handleChange(e)}
+              name="aboutMe"
+              id="aboutMe"
+              variant="filled"
+              placeholder="Write a summary about yourself"
+            />
+          </FormControl>
+          <FormControl>
+            <FormLabel htmlFor="objectives">Objectives</FormLabel>
+            <Textarea
+              onChange={(e) => handleChange(e)}
+              name="objectives"
+              id="objectives"
+              variant="filled"
+              placeholder="Write your objectives"
+            />
+          </FormControl>
+        </HStack>
       </Stack>
     </>
   );
