@@ -13,61 +13,82 @@ import Projects from "./BuildSteps/Projects";
 import Skills from "./BuildSteps/Skills";
 import Work from "./BuildSteps/Work";
 import Template from "./BuildSteps/Template";
+import styled from "styled-components";
+
+const BuilderWrapper = styled(Box)`
+ 
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
+
+const BuilderTabList = styled(TabList)`
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+`;
+
+const BuilderTab = styled(Tab)`
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+`;
+
+const BuilderTabPanel = styled(TabPanel)`
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+`;
 
 const Builder = () => {
   return (
-    <Box
-      bg={"white"}
-      w={"full"}
-      maxW={"xl"}
-      // minH={'100vh'}
-      rounded={"md"}
-      shadow={"md"}
-      overflow={"hidden"}
-    >
+    <BuilderWrapper>
       <Tabs isFitted variant="enclosed">
-        <TabList>
-          <Tab>
+        <BuilderTabList>
+          <BuilderTab>
             <Text fontWeight={"medium"}>About</Text>
-          </Tab>
-          <Tab>
+          </BuilderTab>
+          <BuilderTab>
             <Text fontWeight={"medium"}>Education</Text>
-          </Tab>
-          <Tab>
+          </BuilderTab>
+          <BuilderTab>
             <Text fontWeight={"medium"}>Skills</Text>
-          </Tab>
-          <Tab>
+          </BuilderTab>
+          <BuilderTab>
             <Text fontWeight={"medium"}>Work</Text>
-          </Tab>
-          <Tab>
+          </BuilderTab>
+          <BuilderTab>
             <Text fontWeight={"medium"}>Projects</Text>
-          </Tab>
-          <Tab>
+          </BuilderTab>
+          <BuilderTab>
             <Text fontWeight={"medium"}>Template</Text>
-          </Tab>
-        </TabList>
+          </BuilderTab>
+        </BuilderTabList>
         <TabPanels>
-          <TabPanel>
+          <BuilderTabPanel>
             <About />
-          </TabPanel>
-          <TabPanel>
+          </BuilderTabPanel>
+          <BuilderTabPanel>
             <Education />
-          </TabPanel>
-          <TabPanel>
+          </BuilderTabPanel>
+          <BuilderTabPanel>
             <Skills />
-          </TabPanel>
-          <TabPanel>
+          </BuilderTabPanel>
+          <BuilderTabPanel>
             <Work />
-          </TabPanel>
-          <TabPanel>
+          </BuilderTabPanel>
+          <BuilderTabPanel>
             <Projects />
-          </TabPanel>
-          <TabPanel>
+          </BuilderTabPanel>
+          <BuilderTabPanel>
             <Template />
-          </TabPanel>
+          </BuilderTabPanel>
         </TabPanels>
       </Tabs>
-    </Box>
+    </BuilderWrapper>
   );
 };
 
