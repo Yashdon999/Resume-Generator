@@ -287,7 +287,7 @@ const Main = () => {
           <Button onClick={handleClick}>Create My Resume</Button>
         </MainSection>
         <Img
-          src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4c846170459681.5ba3e47f7e3f7.jpg"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.8RMRzkYUPTQHFniLhPqsJAHaFj%26pid%3DApi&f=1&ipt=d27496c1242612e0a76eba4df2aa49db8c299ad54eae1ec270ccaf3271473188&ipo=images"
           alt="Resume"
         />
       </Main1>
