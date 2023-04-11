@@ -80,4 +80,3 @@ Pay us using
 
 <img src="https://pbs.twimg.com/profile_images/1329113828731146242/FzxBBPrs_400x400.jpg" width="40" height="40">
 
-
