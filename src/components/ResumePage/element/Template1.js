@@ -16,7 +16,7 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import myIamge from "./Ceo.jpeg";
 
-const ResumePreview = () => {
+const Template1 = () => {
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
   const imgStyle = {
@@ -268,4 +268,4 @@ const ResumePreview = () => {
   );
 };
 
-export default ResumePreview;
+export default Template1;

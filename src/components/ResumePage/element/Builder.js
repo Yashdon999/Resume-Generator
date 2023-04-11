@@ -12,6 +12,7 @@ import Education from "./BuildSteps/Education";
 import Projects from "./BuildSteps/Projects";
 import Skills from "./BuildSteps/Skills";
 import Work from "./BuildSteps/Work";
+import Template from "./BuildSteps/Template";
 
 const Builder = () => {
   return (
@@ -41,6 +42,9 @@ const Builder = () => {
           <Tab>
             <Text fontWeight={"medium"}>Projects</Text>
           </Tab>
+          <Tab>
+            <Text fontWeight={"medium"}>Template</Text>
+          </Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -57,6 +61,9 @@ const Builder = () => {
           </TabPanel>
           <TabPanel>
             <Projects />
+          </TabPanel>
+          <TabPanel>
+            <Template />
           </TabPanel>
         </TabPanels>
       </Tabs>
