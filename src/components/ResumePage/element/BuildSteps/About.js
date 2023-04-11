@@ -109,6 +109,17 @@ const About = () => {
               placeholder="https://linkedin.com"
             />
           </FormControl>
+          <FormControl>
+            <FormLabel htmlFor="website">Website Url</FormLabel>
+            <Input
+              onChange={(e) => handleChange(e)}
+              name="website"
+              id="website"
+              type="text"
+              variant="filled"
+              placeholder="Website Url"
+            />
+          </FormControl>
         </HStack>
 
         <FormControl>

@@ -13,6 +13,7 @@ export const ResumeProvider = ({ children }) => {
     name: "",
     role: "",
     email: "",
+    website: "",
     phone: "",
     address: "",
     linkedin: "",

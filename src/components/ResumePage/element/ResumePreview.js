@@ -14,6 +14,8 @@ import { useResume } from "../Context";
 import { MdMail, MdLocalPhone, MdLocationPin } from "react-icons/md";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
+import { BsGlobe } from "react-icons/bs";
+
 import myIamge from "./Ceo.jpeg";
 const ResumePreview = () => {
  
@@ -65,6 +67,12 @@ const ResumePreview = () => {
               <MdMail />{" "}
               <Text>
                 {about.email ? about.email : "HarryPotter@hogwarts.edu"}
+              </Text>
+            </HStack>
+            <HStack spacing={1}>
+              <BsGlobe />{" "}
+              <Text as="a" href={about.website}>
+                Website
               </Text>
             </HStack>
             <HStack spacing={1}>
