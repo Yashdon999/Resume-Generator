@@ -9,6 +9,7 @@ import {
   Wrap,
   UnorderedList,
   ListItem,
+  styled,
 } from "@chakra-ui/react";
 import { useResume } from "../Context";
 import { MdMail, MdLocalPhone, MdLocationPin } from "react-icons/md";
@@ -26,6 +27,8 @@ const ResumePreview = () => {
     margin: "15px",
     borderRadius: "50%",
   };
+  
+
   return (
     <>
       <Box
@@ -60,7 +63,9 @@ const ResumePreview = () => {
             color={"white"}
             p={4}
             justifyContent={"space-between"}
+            className="d-sm-flex flex-sm-column align-items-sm-start d-xl-flex flex-xl-row"
           >
+
             <HStack spacing={1}>
               <MdMail />{" "}
               <Text>
