@@ -64,7 +64,7 @@ If `npm install` does not work, try using:
 
 # Web URL
 
-https://resume-genrator.vercel.app/
+https://resume-generator-xi.vercel.app/
 
 # Credits
 
