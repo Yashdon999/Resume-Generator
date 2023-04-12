@@ -24,9 +24,9 @@ function Header() {
           Resume Generator
         </StyledNavbar.Brand>
         {!open ? (
-          <StyledNavbar.Toggle aria-controls="navbarScroll" />
+          <StyledNavbar.Toggle aria-controls="navbarScroll" style={{boxShadow: 'none'}}/>
         ) : (
-          <StyledNavbar.Toggle className="navbar-toggler">
+          <StyledNavbar.Toggle className="navbar-toggler" style={{boxShadow: 'none'}}>
             <HiXMark size={33} />
           </StyledNavbar.Toggle>
         )}
