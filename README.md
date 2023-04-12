@@ -25,7 +25,7 @@
 
 ## Note-:
 
-It is a Resumer Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
+It is a Resume Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
 
 # Used Languages
 
