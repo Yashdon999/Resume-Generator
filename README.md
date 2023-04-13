@@ -72,7 +72,6 @@ https://resume-generator-xi.vercel.app/
 - [Khizar Shah](https://github.com/Khizarshah01)
 - [Harsh Baraliya](https://github.com/MrCracker-OP)
 - [Shashwat Agrawal](https://github.com/ShashwatAgrawal20)
-- [Om Ingle](https://github.com/mr-pros)
 
 # Support us by Donating
 
