@@ -31,7 +31,7 @@ function Header() {
           </StyledNavbar.Toggle>
         )}
         <StyledNavbar.Collapse id="navbarScroll">
-          <NavLinks>
+          <NavLinks> 
             <StyledNavLink exact as={NavLink} to="/">
               Home
             </StyledNavLink>
