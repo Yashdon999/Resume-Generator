@@ -1,35 +1,17 @@
-import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import styled from "styled-components";
 import { NavLink, Link } from "react-router-dom";
-import { HiXMark } from "react-icons/hi2";
 import githubLogo from "./images/github.png"; // import the GitHub logo image
 
 function Header() {
-  const [open, setOpen] = useState(false);
-  const handleToggle = () => {
-    open ? setOpen(false) : setOpen(true);
-  };
   return (
-    <Navbar
-      sticky="top"
-      bg="light"
-      expand="lg"
-      onToggle={handleToggle}
-      expanded={open}
-    >
+    <StyledNavbar sticky="top" bg="light" expand="lg">
       <Container fluid>
         <StyledNavbar.Brand as={Link} to="/">
           Resume Generator
         </StyledNavbar.Brand>
-        {!open ? (
-          <StyledNavbar.Toggle aria-controls="navbarScroll" />
-        ) : (
-          <StyledNavbar.Toggle className="navbar-toggler">
-            <HiXMark size={33} />
-          </StyledNavbar.Toggle>
-        )}
+        <StyledNavbar.Toggle aria-controls="navbarScroll" />
         <StyledNavbar.Collapse id="navbarScroll">
           <NavLinks>
             <StyledNavLink exact as={NavLink} to="/">
@@ -50,7 +32,7 @@ function Header() {
           </GitHubLink>
         </StyledNavbar.Collapse>
       </Container>
-    </Navbar>
+    </StyledNavbar>
   );
 }
 
