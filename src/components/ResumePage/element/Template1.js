@@ -20,9 +20,9 @@ const Template1 = () => {
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
   const imgStyle = {
-    width: "115px",
-    height: "115px",
-    margin: "15px",
+    width: "4rem",
+    height: "4rem",
+    margin: "2.5rem 15px 15px 2px",
     borderRadius: "50%",
   };
   return (
@@ -45,7 +45,10 @@ const Template1 = () => {
               <Text color={theme} fontWeight={"bold"}>
                 {about.role ? about.role : "Full Stack Web Developer"}
               </Text>
-              <HStack justifyContent={"space-between"}>
+              <HStack 
+                justifyContent={"space-between"}
+                fontSize={{ base: '11px', md: '9px', lg: '10px' , xl: "18px" }}
+              >
                 <HStack spacing={1}>
                   <MdMail />{" "}
                   <Text>
@@ -69,10 +72,11 @@ const Template1 = () => {
               </HStack>
             </VStack>
             {about.picture ? (
-              <img style={imgStyle} src={about.picture} alt="avatar" />
+              <img   style={imgStyle}  src={about.picture} alt="avatar"/>
             ) : (
-              <img style={imgStyle} src={myIamge} alt="avatar" />
+              <img   style={imgStyle} src={myIamge} alt="avatar" />
             )}
+            
           </HStack>
 
           <HStack
