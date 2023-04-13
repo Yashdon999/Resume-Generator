@@ -39,15 +39,6 @@ const Main = () => {
   });
 
   const RowElement = styled.div`
-    // display: "flex";
-    // flexdirection: "row";
-    // alignibuttems: "center";
-    // justifycontent: "center";
-    // margin: "0 4%"; // Default margin for desktop
-    // // Media query for phone screens
-    // "@media (max-width: 768px)": {
-    //   margin: "0 2%"; // Custom margin for phone screens
-    // }
     display: flex;
     flex-direction: column;
     justify-content: center;
