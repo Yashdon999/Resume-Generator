@@ -25,7 +25,7 @@
 
 ## Note-:
 
-It is a Resumer Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
+It is a Resume Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
 
 # Used Languages
 
@@ -64,7 +64,7 @@ If `npm install` does not work, try using:
 
 # Web URL
 
-https://resume-genrator.vercel.app/
+https://resume-generator-xi.vercel.app/
 
 # Credits
 
@@ -79,5 +79,4 @@ https://resume-genrator.vercel.app/
 Pay us using
 
 <img src="https://pbs.twimg.com/profile_images/1329113828731146242/FzxBBPrs_400x400.jpg" width="40" height="40">
-
 

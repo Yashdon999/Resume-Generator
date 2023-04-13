@@ -123,13 +123,7 @@ export const ResumeProvider = ({ children }) => {
     },
   ]);
 
-  // useEffect(() => {
-  //     toast({
-  //         title: `${theme.split(".", 1)} selected`,
-  //         status: 'success',
-  //         isClosable: true,
-  //       })
-  // }, [theme]);
+  const [template, setTemplate] = useState("");
 
   const value = {
     about,
@@ -145,6 +139,8 @@ export const ResumeProvider = ({ children }) => {
     printElem,
     theme,
     setTheme,
+    template,
+    setTemplate,
   };
 
   return (

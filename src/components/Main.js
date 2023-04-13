@@ -287,7 +287,7 @@ const Main = () => {
           <Button onClick={handleClick}>Create My Resume</Button>
         </MainSection>
         <Img
-          src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4c846170459681.5ba3e47f7e3f7.jpg"
+          src="https://uicookies.com/wp-content/uploads/edd/2017/01/onlinecv-thumb.jpg"
           alt="Resume"
         />
       </Main1>
@@ -371,7 +371,7 @@ const Main = () => {
         <Text>Do you write React code?</Text>
         <Equal>=</Equal>
         <Icon src={github} alt="Code Icon" />
-        <Button5>Contribute</Button5>
+        <Button5> <a href="https://github.com/Yashdon999/Resume-Generator">Contribute</a></Button5>
     </MainSection5>
     </>
   );

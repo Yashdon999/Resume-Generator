@@ -1,13 +1,14 @@
-import { Box, Container, Stack, Heading, Button, IconButton } from "@chakra-ui/react";
+import { Box, Container, Stack, Heading, IconButton } from "@chakra-ui/react";
 import Builder from "./Builder";
-import ResumePreview from "./ResumePreview";
+import Template1 from "./Template1.js";
+import Template2 from "./Template2.js";
 import ThemeSelect from "./Theme/ThemeSelect";
 import { useReactToPrint } from "react-to-print";
 import { useResume } from "../Context";
 import { MdOutlineFileDownload, MdShare } from "react-icons/md";
 
 const Main = () => {
-  const { printElem } = useResume();
+  const { printElem, template } = useResume(); // Add template state variable
 
   const handlePrint = useReactToPrint({
     content: () => printElem.current,
@@ -16,6 +17,9 @@ const Main = () => {
   const handleShare = () => {
     // Logic to share the content
   }
+
+  // Conditionally render the selected template
+  const selectedTemplate = template === "template2" ? <Template2 /> : <Template1 />;
 
   return (
     <Container bg={"gray.50"} minW={"full"} py={10} id="builder">
@@ -64,7 +68,7 @@ const Main = () => {
         justifyContent={"space-between"}
       >
         <Builder />
-        <ResumePreview />
+        {selectedTemplate} {/* Render the selected template */}
       </Stack>
 
       {/* Add a media query for smaller screens */}
@@ -89,3 +93,4 @@ const Main = () => {
 };
 
 export default Main;
+
