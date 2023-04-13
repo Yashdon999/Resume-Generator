@@ -21,6 +21,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "react-share": "^4.4.1",
     "react-to-print": "^2.14.3",
     "styled-components": "^5.3.6",
     "uuid": "^8.3.2",
