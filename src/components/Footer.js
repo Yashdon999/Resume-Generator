@@ -20,17 +20,19 @@ const Footer = () => {
             className="bg-dark text-light mt-auto w-auto"
             style={{ backgroundColor: "#929fba" }}>
             <Row className="justify-content-md-center">
+
+                {/* <!-- Links --> */}
                 <Col md="auto">
                     <div className="p-4">
-                        <h6 className="text-uppercase mb-3 font-weight-bold">
-                            Links
-                        </h6>
+                        <h6 className="text-uppercase mb-3 font-weight-bold">Links</h6>
                         <Row><GoldHoverLink href="/">Home</GoldHoverLink></Row>
                         <Row><GoldHoverLink href="/about">About</GoldHoverLink></Row>
                         <Row><GoldHoverLink href="/contact">Contact</GoldHoverLink></Row>
                         <Row><GoldHoverLink href="/study">Study</GoldHoverLink></Row>
                     </div>
                 </Col>
+
+                {/* <!-- Contact --> */}
                 <Col md="auto">
                     <div className="p-4">
                         <h6 className="text-uppercase mb-3 font-weight-bold">Contact</h6>
@@ -40,11 +42,11 @@ const Footer = () => {
                         <p><i className="fa fa-print mr-3"></i> + 01 234 567 89</p>
                     </div>
                 </Col>
+
+                {/* <!-- Contributors --> */}
                 <Col md="auto">
                     <div className="p-4">
-                        <h6 className="text-uppercase mb-3 font-weight-bold">
-                            Contributors
-                        </h6>
+                        <h6 className="text-uppercase mb-3 font-weight-bold">Contributors</h6>
                         <ul className="list-unstyled justify-content-center justify-content-md-end align-items-center m-0">
                             {teamMembers.map((member, index) => (
                                 <li key={index} className="">
@@ -60,6 +62,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Col>
+
+                {/* <!-- Socials --> */}
                 <Col md="auto">
                     <div className="p-4">
                         <h6 className="text-uppercase mb-3 font-weight-bold">Follow us</h6>
@@ -108,15 +112,17 @@ const Footer = () => {
                 </Col>
             </Row>
             <Row>
+
+                {/* <!-- Copyright --> */}
                 <div
                     class="text-center p-3"
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
                 >
                     Copyright © {new Date().getFullYear()} Resume Generator
                 </div>
+                
             </Row>
         </Container>
-
     )
 }
 
