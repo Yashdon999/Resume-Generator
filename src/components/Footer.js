@@ -1,4 +1,4 @@
-import {Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 
 const teamMembers = [
@@ -112,7 +112,7 @@ const Footer = () => {
                     class="text-center p-3"
                     style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
                 >
-                    Copyright © 2023 Resume Generator
+                    Copyright © {new Date().getFullYear()} Resume Generator
                 </div>
             </Row>
         </Container>
