@@ -20,11 +20,16 @@ const Template1 = () => {
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
   const imgStyle = {
-    width: "4rem",
-    height: "4rem",
+    width: "115px",
+    height: "115px",
     margin: "2.5rem 15px 15px 2px",
     borderRadius: "50%",
   };
+
+  const HstackStyle = {
+    margin:"0",
+    marginLeft: ".5rem"
+  }
   return (
     <>
       <Box
@@ -37,8 +42,8 @@ const Template1 = () => {
       >
         <div ref={printElem}>
           {/* Main Header section which contain image & some personal information */}
-          <HStack justifyContent="space-between">
-            <VStack m={4} alignItems="flex-start" spacing={0.5}>
+          <HStack justifyContent="space-between"  >
+            <VStack m={4} alignItems="flex-start" spacing={0.5} style={HstackStyle}>
               <Heading as="h4" size="md">
                 {about.name ? about.name : "Harry Potter"}
               </Heading>
@@ -49,21 +54,21 @@ const Template1 = () => {
                 justifyContent={"space-between"}
                 fontSize={{ base: '11px', md: '9px', lg: '10px' , xl: "18px" }}
               >
-                <HStack spacing={1}>
+                <HStack spacing={.5}>
                   <MdMail />{" "}
                   <Text>
                     {about.email ? about.email : "HarryPotter@hogwarts.edu"}
                   </Text>
                 </HStack>
-                <HStack spacing={1}>
+                <HStack spacing={.5}>
                   <MdLocalPhone />{" "}
                   <Text>{about.phone ? about.phone : "+910000000000"}</Text>
                 </HStack>
-                <HStack spacing={1}>
+                <HStack spacing={.5}>
                   <MdLocationPin />{" "}
                   <Text>{about.address ? about.address : "Pune, MH"}</Text>
                 </HStack>
-                <HStack spacing={1}>
+                <HStack spacing={.5}>
                   <RiLinkedinBoxFill />{" "}
                   <Text as="a" href={about.linkedin}>
                     LinkedIn
