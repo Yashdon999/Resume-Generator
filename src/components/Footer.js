@@ -25,10 +25,10 @@ const Footer = () => {
                         <h6 className="text-uppercase mb-3 font-weight-bold">
                             Links
                         </h6>
-                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/">Home</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/about">About</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/contact">Contact</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/study">Study</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="/">Home</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="/about">About</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="/contact">Contact</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="/study">Study</GoldHoverLink></Row>
                     </div>
                 </Col>
                 <Col md="auto">
