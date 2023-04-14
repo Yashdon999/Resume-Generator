@@ -28,16 +28,16 @@ const Footer = () => {
                         <h6 className="text-uppercase mb-3 font-weight-bold">
                             Links
                         </h6>
-                        <Row><GoldHoverLink href="!#">Home</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="!#">About</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="!#">Contact</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="!#">Study</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/">Home</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/about">About</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/contact">Contact</GoldHoverLink></Row>
+                        <Row><GoldHoverLink href="https://resume-generator-xi.vercel.app/study">Study</GoldHoverLink></Row>
                     </div>
                 </Col>
                 <Col md="auto">
                     <div className="p-4">
                         <h6 className="text-uppercase mb-3 font-weight-bold">Contact</h6>
-                        <p><i className="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i className="fa fa-home mr-3"></i> Your Address here</p>
                         <p><i className="fa fa-envelope mr-3"></i> info@gmail.com</p>
                         <p><i className="fa fa-phone mr-3"></i> + 01 234 567 88</p>
                         <p><i className="fa fa-print mr-3"></i> + 01 234 567 89</p>
@@ -70,7 +70,7 @@ const Footer = () => {
                         {/* <!-- Facebook --> */}
                         <a
                             className="btn btn-primary btn-floating me-1 rounded-circle border-0"
-                            style={{ backgroundColor: "#3b5998" }}
+                            style={{ backgroundColor: "#3b5998", padding: "0.5rem 0.95rem" }}
                             href="#!"
                             role="button"
                         ><i className="fa fa-facebook-f"></i></a>
@@ -78,7 +78,7 @@ const Footer = () => {
                         {/* <!-- Twitter --> */}
                         <a
                             className="btn btn-primary btn-floating m-1 border-0 rounded-circle"
-                            style={{ backgroundColor: "#55acee" }}
+                            style={{ backgroundColor: "#55acee", padding: "0.5rem 0.8rem" }}
                             href="#!"
                             role="button"
                         ><i className="fa fa-twitter"></i></a>
@@ -86,7 +86,7 @@ const Footer = () => {
                         {/* <!-- Google --> */}
                         <a
                             className="btn btn-primary btn-floating m-1 border-0 rounded-circle"
-                            style={{ backgroundColor: "#dd4b39" }}
+                            style={{ backgroundColor: "#dd4b39", padding: "0.5rem 0.85rem" }}
                             href="#!"
                             role="button"
                         ><i className="fa fa-google"></i></a>
@@ -94,7 +94,7 @@ const Footer = () => {
                         {/* <!-- Instagram --> */}
                         <a
                             className="btn btn-primary btn-floating m-1 border-0 rounded-circle"
-                            style={{ backgroundColor: "#ac2bac" }}
+                            style={{ backgroundColor: "#ac2bac", padding: "0.5rem 0.85rem" }}
                             href="#!"
                             role="button"
                         ><i className="fa fa-instagram"></i></a>
@@ -102,7 +102,7 @@ const Footer = () => {
                         {/* <!-- Github --> */}
                         <a
                             className="btn btn-primary btn-floating m-1 border-0 rounded-circle"
-                            style={{ backgroundColor: "#333333" }}
+                            style={{ backgroundColor: "#333333", padding: "0.5rem 0.85rem" }}
                             href="#!"
                             role="button"
                         ><i className="fa fa-github"></i></a>
