@@ -1,3 +1,4 @@
+<h2 align="center"><b>⭐ Star our repository and grow our community</b></h2>
 <h2 align="center"><b>Owner: <a href="https://github.com/Yashdon999">Maku Gang 🇮🇳</a></b></h2>
 <br>
 <p align="center"><img src="https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1625166167/1625166166.jpg"></a></p> 
@@ -72,11 +73,9 @@ https://resume-generator-xi.vercel.app/
 - [Khizar Shah](https://github.com/Khizarshah01)
 - [Harsh Baraliya](https://github.com/MrCracker-OP)
 - [Shashwat Agrawal](https://github.com/ShashwatAgrawal20)
-- [Om Ingle](https://github.com/mr-pros)
 
 # Support us by Donating
 
 Pay us using
 
 <img src="https://pbs.twimg.com/profile_images/1329113828731146242/FzxBBPrs_400x400.jpg" width="40" height="40">
-
