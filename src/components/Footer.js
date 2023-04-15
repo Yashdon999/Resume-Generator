@@ -4,7 +4,6 @@ import styled from "styled-components";
 const teamMembers = [
     { name: "Harsh Baraliya", github: "https://github.com/MrCracker-OP" },
     { name: "Khizar Shah", github: "https://github.com/Khizarshah01" },
-    { name: "Om Ingle", github: "https://github.com/mr-pros" },
     { name: "Shashwat Agrawal", github: "https://github.com/ShashwatAgrawal20" },
     { name: "Yash Vyavahare", github: "https://github.com/Yashdon999" },
 ];
@@ -43,7 +42,7 @@ const Footer = () => {
                     </div>
                 </Col>
 
-                {/* <!-- Contributors --> */}
+                {/* <!-- Core Developer --> */}
                 <Col md="auto">
                     <div className="p-4">
                         <h6 className="text-uppercase mb-3 font-weight-bold">Contributors</h6>
