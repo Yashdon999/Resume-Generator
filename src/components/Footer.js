@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const teamMembers = [
     { name: "Harsh Baraliya", github: "https://github.com/MrCracker-OP" },
@@ -24,10 +25,10 @@ const Footer = () => {
                 <Col md="auto">
                     <div className="p-4">
                         <h6 className="text-uppercase mb-3 font-weight-bold">Links</h6>
-                        <Row><GoldHoverLink href="/">Home</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="/about">About</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="/contact">Contact</GoldHoverLink></Row>
-                        <Row><GoldHoverLink href="/study">Study</GoldHoverLink></Row>
+                        <Row><GoldHoverLink as={Link} to="/">Home</GoldHoverLink></Row>
+                        <Row><GoldHoverLink as={Link} to="/about">About</GoldHoverLink></Row>
+                        <Row><GoldHoverLink as={Link} to="/contact">Contact</GoldHoverLink></Row>
+                        <Row><GoldHoverLink as={Link} to="/study">Study</GoldHoverLink></Row>
                     </div>
                 </Col>
 
