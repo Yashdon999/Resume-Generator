@@ -60,22 +60,24 @@ const ResumePreview = () => {
             color={"white"}
             p={4}
             justifyContent={"space-between"}
+            display={{md: 'flex'}}
+            flexWrap={{md: 'wrap'}}
           >
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <MdMail />{" "}
               <Text>
                 {about.email ? about.email : "HarryPotter@hogwarts.edu"}
               </Text>
             </HStack>
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <MdLocalPhone />{" "}
               <Text>{about.phone ? about.phone : "+910000000000"}</Text>
             </HStack>
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <MdLocationPin />{" "}
               <Text>{about.address ? about.address : "Pune, MH"}</Text>
             </HStack>
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <RiLinkedinBoxFill />{" "}
               <Text as="a" href={about.linkedin}>
                 LinkedIn

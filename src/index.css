@@ -68,3 +68,49 @@ code {
   z-index: 1;
   box-shadow: none !important;
 }
+
+
+@media (max-width: 1335px){
+  .infoHolders{
+    margin-inline-start: 0px !important;
+    margin-inline-end: 3px !important;
+  }
+}
+
+@media (max-width: 910px){
+  .avatarImage{
+    width: 23% !important;
+    height: 23% !important;
+    margin: 0px !important;
+    margin-right: 3px !important;
+  }
+}
+
+@media (max-width: 768px){
+  .builderContainer{
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 766px){
+  .avatarImage{
+    margin: 15px !important;
+  }
+}
+
+@media (max-width: 768px){
+  .builderTabs{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px){
+  .avatarImage{
+    width: 21% !important;
+    height: 21% !important;
+    margin: 0px !important;
+    margin-right: 2px !important;
+  }
+}

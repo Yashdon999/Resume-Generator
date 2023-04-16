@@ -103,6 +103,7 @@ const Main = () => {
         my={8}
         alignItems={"flex-start"}
         justifyContent={"space-between"}
+        className="builderContainer" 
       >
         <Builder />
         {selectedTemplate} {/* Render the selected template */}
