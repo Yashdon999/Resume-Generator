@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -33,14 +33,49 @@ const Background = styled.div`
 const About = () => {
   const [contributors, setContributors] = useState([]);
 
+  const coreDevelopers = useMemo(
+    () => [
+      {
+        login: "MrCracker-OP",
+        html_url: "https://github.com/MrCracker-OP",
+        image: "https://avatars.githubusercontent.com/u/77793128?v=4",
+      },
+      {
+        login: "Khizarshah01",
+        html_url: "https://github.com/khizarshah01",
+        image: "https://avatars.githubusercontent.com/u/109973520?v=4",
+      },
+      {
+        login: "ShashwatAgrawal20",
+        html_url: "https://github.com/shashwatagrawal20",
+        image: "https://avatars.githubusercontent.com/u/72117025?v=4",
+      },
+      {
+        login: "Yashdon999",
+        html_url: "https://github.com/yashdon999",
+        image: "https://avatars.githubusercontent.com/u/104668751?v=4",
+      },
+    ],
+    []
+  );
+
   useEffect(() => {
     fetch(
       "https://api.github.com/repos/Yashdon999/Resume-Generator/contributors"
     )
       .then((response) => response.json())
-      .then((data) => setContributors(data))
+      .then((data) => {
+        // Filter out the contributors whose GitHub username matches with any of the core developers' GitHub username
+        const filteredData = data.filter(
+          (contributor) =>
+            !coreDevelopers.find(
+              (developer) => developer.login === contributor.login
+            )
+        );
+        setContributors(filteredData);
+      })
       .catch((error) => console.log(error));
-  }, []);
+  }, [coreDevelopers]);
 
   const teamHeader = "Our Team";
   const teamDescription = "Meet the amazing people who make it all possible!";
@@ -51,8 +86,47 @@ const About = () => {
         <Container style={{ padding: "3px" }}>
           <h2 className="text-center mt-4 fs-2 fw-bold">{teamHeader}</h2>
           <p className="text-center">{teamDescription}</p>
-          <h2 className="text-center mt-4 fs-2 fw-bold">Contributors</h2>
-          <p className="text-center">Thanks to the following contributors:</p>
+          <h2 className="text-center mt-4 fs-2 fw-bold">Core Contributors</h2>
+          <p className="text-center">
+            Thanks to the following core contributors:
+          </p>
+          <Row className="d-flex align-items-center justify-content-center">
+            {coreDevelopers.map((developer) => (
+              <Col md={4} key={developer.username}>
+                <StyledCard>
+                  <Card.Img
+                    variant="top"
+                    src={developer.image}
+                    style={{
+                      width: "150px",
+                      height: "150px",
+                      borderRadius: "50%",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <Card.Body>
+                    <Card.Title>
+                      <a
+                        href={developer.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <strong>{developer.login}</strong>
+                      </a>
+                    </Card.Title>
+                    <Card.Subtitle className="mb-2">
+                      <strong>Contributor</strong>
+                    </Card.Subtitle>
+                  </Card.Body>
+                </StyledCard>
+              </Col>
+            ))}
+          </Row>
+          <h2 className="text-center mt-4 fs-2 fw-bold">GitHub Contributors</h2>
+          <p className="text-center">
+            Thanks to the following GitHub contributors:
+          </p>
           <Row className="d-flex align-items-center justify-content-center">
             {contributors.map((contributor) => (
               <Col md={4} key={contributor.id}>
