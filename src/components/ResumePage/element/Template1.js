@@ -45,22 +45,22 @@ const Template1 = () => {
               <Text color={theme} fontWeight={"bold"}>
                 {about.role ? about.role : "Full Stack Web Developer"}
               </Text>
-              <HStack justifyContent={"space-between"}>
+              <HStack justifyContent={"space-between"}  display={{md: 'flex'}} flexWrap={{md: 'wrap'}}>
                 <HStack spacing={1}>
                   <MdMail />{" "}
                   <Text>
                     {about.email ? about.email : "HarryPotter@hogwarts.edu"}
                   </Text>
                 </HStack>
-                <HStack spacing={1}>
+                <HStack className="infoHolders" spacing={1} marginInlineStart={"-80"}>
                   <MdLocalPhone />{" "}
                   <Text>{about.phone ? about.phone : "+910000000000"}</Text>
                 </HStack>
-                <HStack spacing={1}>
+                <HStack className="infoHolders" spacing={1}>
                   <MdLocationPin />{" "}
                   <Text>{about.address ? about.address : "Pune, MH"}</Text>
                 </HStack>
-                <HStack spacing={1}>
+                <HStack className="infoHolders" spacing={1}>
                   <RiLinkedinBoxFill />{" "}
                   <Text as="a" href={about.linkedin}>
                     LinkedIn
@@ -69,9 +69,9 @@ const Template1 = () => {
               </HStack>
             </VStack>
             {about.picture ? (
-              <img style={imgStyle} src={about.picture} alt="avatar" />
+              <img className="avatarImage" style={imgStyle} src={about.picture} alt="avatar" />
             ) : (
-              <img style={imgStyle} src={myIamge} alt="avatar" />
+              <img className="avatarImage" style={imgStyle} src={myIamge} alt="avatar" />
             )}
           </HStack>
 

@@ -26,7 +26,7 @@ const Builder = () => {
       overflow={"hidden"}
     >
       <Tabs isFitted variant="enclosed">
-        <TabList>
+        <TabList className="builderTabs" display={{md: 'flex'}} flexWrap={{md: 'wrap'}}>
           <Tab>
             <Text fontWeight={"medium"}>About</Text>
           </Tab>
