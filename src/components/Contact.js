@@ -6,12 +6,12 @@ import styled from "styled-components";
 const StyledForm = styled(Form)`
   /* background-color: rgba(0,0,1, 0.2); */
   background: white;
-  /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #cff2ff; 
   /* backdrop-filter: blur(20px); */
   color: #1a202c;
   border-radius: 10px;
   /* font-family: Garamond, serif; */
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
   display: flex;
@@ -31,6 +31,9 @@ const StyledForm = styled(Form)`
     padding: 0.5rem;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
+  }
+  input[type="email"]:focus{
+    outline:0,
   }
 
   input[type="text"]:first-of-type {
@@ -80,7 +83,7 @@ const StyledButton = styled(Button)`
 
 const StyledSection = styled.section`
   /* background-image: url(); */
-  background: linear-gradient(45deg, #cff2ff, #00dbde);
+  background: #cff2ff;
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
