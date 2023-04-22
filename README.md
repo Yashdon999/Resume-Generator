@@ -1,3 +1,4 @@
+<h2 align="center"><b>⭐ Star our repository and grow our community</b></h2>
 <h2 align="center"><b>Owner: <a href="https://github.com/Yashdon999">Maku Gang 🇮🇳</a></b></h2>
 <br>
 <p align="center"><img src="https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1625166167/1625166166.jpg"></a></p> 
@@ -8,7 +9,6 @@
 <br>
 
 [![Private Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/Yashdon999/Resume-Genrator)
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg?&style=flat-square)](https://github.com/Yashdon999/Resume-Genrator/blob/main/LICENSE)
 
 <br>
 
@@ -26,7 +26,7 @@
 
 ## Note-:
 
-It is a Resumer Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
+It is a Resume Generator which automatically generates a resume car according to your given information. We made this project with help of all our Team Members. All credits goes to its Respective Owners.......
 
 # Used Languages
 
@@ -65,7 +65,7 @@ If `npm install` does not work, try using:
 
 # Web URL
 
-https://resume-genrator.vercel.app/
+https://resume-generator-xi.vercel.app/
 
 # Credits
 
@@ -73,12 +73,9 @@ https://resume-genrator.vercel.app/
 - [Khizar Shah](https://github.com/Khizarshah01)
 - [Harsh Baraliya](https://github.com/MrCracker-OP)
 - [Shashwat Agrawal](https://github.com/ShashwatAgrawal20)
-- [Om Ingle](https://github.com/mr-pros)
 
 # Support us by Donating
 
 Pay us using
 
 <img src="https://pbs.twimg.com/profile_images/1329113828731146242/FzxBBPrs_400x400.jpg" width="40" height="40">
-
-

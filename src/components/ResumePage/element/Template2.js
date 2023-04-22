@@ -16,7 +16,7 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import myIamge from "./Ceo.jpeg";
 const ResumePreview = () => {
- 
+
 
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
@@ -60,22 +60,24 @@ const ResumePreview = () => {
             color={"white"}
             p={4}
             justifyContent={"space-between"}
+            display={{md: 'flex'}}
+            flexWrap={{md: 'wrap'}}
           >
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <MdMail />{" "}
               <Text>
                 {about.email ? about.email : "HarryPotter@hogwarts.edu"}
               </Text>
             </HStack>
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <MdLocalPhone />{" "}
               <Text>{about.phone ? about.phone : "+910000000000"}</Text>
             </HStack>
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <MdLocationPin />{" "}
               <Text>{about.address ? about.address : "Pune, MH"}</Text>
             </HStack>
-            <HStack spacing={1}>
+            <HStack spacing={1} className="infoHolders">
               <RiLinkedinBoxFill />{" "}
               <Text as="a" href={about.linkedin}>
                 LinkedIn
@@ -83,7 +85,7 @@ const ResumePreview = () => {
             </HStack>
           </HStack>
 
-     
+
           <Box mt={6}>
             <VStack alignItems={"flex-start"} px={4}>
               <Heading as="h4" size="md" color={"gray.700"}>
@@ -92,8 +94,14 @@ const ResumePreview = () => {
               <Text color={"gray.600"}>{about.aboutMe ? about.aboutMe: "I am a skilled wizard, trained in the art of magical application development. Using the latest incantations and spells, I create enchanting web applications that are both visually stunning and functionally powerful. My focus on precision and quality magic ensures that every product I create is worthy of the highest praise from even the most critical of magical authorities."}</Text>
             </VStack>
           </Box>
-
-
+          <Box mt={6}>
+            <VStack alignItems={"flex-start"} px={4}>
+              <Heading as="h4" size="md" color={"gray.700"}>
+                Objectives
+              </Heading>
+              <Text color={"gray.600"}>{about.objectives ? about.objectives: "To leverage my skills in magical application development to create visually stunning and functionally powerful web applications that meet the highest standards of quality and exceed the expectations of even the most critical magical authorities."}</Text>
+            </VStack>
+          </Box>
 
           <HStack
             w={"full"}

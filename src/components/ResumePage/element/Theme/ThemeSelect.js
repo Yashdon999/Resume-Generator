@@ -11,11 +11,11 @@ const ThemeSelect = () => {
   const ref = useRef();
   const options = [
     "blue",
-    "purple.400",
-    "green.400",
-    "gray.400",
-    "red.400",
-    "orange.400",
+    "#BD238D",
+    "#6D2194",
+    "#0B877C",
+    "red.700",
+    "orange.800",
   ];
 
   const { getRootProps, getRadioProps } = useRadioGroup({
