@@ -74,6 +74,12 @@ https://resume-generator-xi.vercel.app/
 - [Harsh Baraliya](https://github.com/MrCracker-OP)
 - [Shashwat Agrawal](https://github.com/ShashwatAgrawal20)
 
+## Thanks to all Contributors 💪
+
+Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
+
+![Contributors](https://resume-generator-xi.vercel.app/)
+
 # Support us by Donating
 
 Pay us using
