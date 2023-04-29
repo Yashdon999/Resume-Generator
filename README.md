@@ -79,7 +79,17 @@ https://resume-generator-xi.vercel.app/
 
 Thanks a lot for spending your time helping Resume Generator grow. Thanks a lot! Keep rocking 🍻
 
-![Contributors](https://resume-generator-xi.vercel.app/)
+<p float="left">
+  <img src="https://avatars.githubusercontent.com/u/104668751?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/109973520?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/72117025?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/77793128?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/68184118?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/81804004?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/94482664?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/25421701?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/69655024?v=4" width="80" height="80" />
+  </p>
 
 # Support us by Donating
 
