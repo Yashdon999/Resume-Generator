@@ -76,7 +76,7 @@ https://resume-generator-xi.vercel.app/
 
 ## Thanks to all Contributors 💪
 
-Thanks a lot for spending your time helping Moksh grow. Thanks a lot! Keep rocking 🍻
+Thanks a lot for spending your time helping Resume Generator grow. Thanks a lot! Keep rocking 🍻
 
 ![Contributors](https://resume-generator-xi.vercel.app/)
 
