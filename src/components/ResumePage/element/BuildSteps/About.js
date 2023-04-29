@@ -8,13 +8,11 @@ import {
   Textarea,
   Switch
 } from "@chakra-ui/react";
-import React, { useState } from "react";
 import { useResume } from "../../Context";
 import ImageUpload from "../ImageUploadButton/ImageUpload.component";
 
 const About = () => {
   const { about, setAbout } = useResume();
-  const [addImage, setAddImage] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
