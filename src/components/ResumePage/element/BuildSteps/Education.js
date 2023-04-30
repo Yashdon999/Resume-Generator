@@ -15,7 +15,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { useResume } from "../../Context";
-import { MdDelete } from "react-icons/md";
 
 const Education = () => {
   const { educationList, setEducationList } = useResume();
@@ -31,10 +30,6 @@ const Education = () => {
     );
 
     setEducationList(updatedEducation);
-  };
-
-  const deleteEducation = (id) => {
-    setEducationList(educationList.filter((edu) => edu.id !== id));
   };
 
   return (
@@ -111,14 +106,6 @@ const Education = () => {
                   />
                 </FormControl>
               </HStack>
-              {educationList[0].id !== education.id && <Button
-                rightIcon={<MdDelete />}
-                onClick={() => deleteEducation(education.id)}
-                mt={3}
-                colorScheme={"red"}
-              >
-                Delete
-              </Button>}
             </AccordionPanel>
           </AccordionItem>
         ))}

@@ -38,13 +38,11 @@ const ResumePreview = () => {
       >
         <div ref={printElem}>
         <HStack>
-      {about.addImage && <>
   {about.picture ? (
     <img style={imgStyle} src={about.picture} alt="avatar" />
   ) : (
     <img style={imgStyle} src={myIamge} alt="avatar" />
   )}
-  </>}
 
   <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
     <Heading as="h4" size="md">

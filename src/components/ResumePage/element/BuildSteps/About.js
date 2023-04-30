@@ -6,8 +6,8 @@ import {
   Stack,
   Button,
   Textarea,
-  Switch
 } from "@chakra-ui/react";
+import React from "react";
 import { useResume } from "../../Context";
 import ImageUpload from "../ImageUploadButton/ImageUpload.component";
 
@@ -33,15 +33,7 @@ const About = () => {
             Remove Image
           </Button>
         ) : (
-          <>
-           <FormControl display='flex' marginY="3" width="full" alignItems='center'>
-              <FormLabel htmlFor='img-alerts' mb='0'>
-                Add Image
-              </FormLabel>
-              <Switch id='img-alerts' defaultChecked={about.addImage}  onChange={e => setAbout({...about, ["addImage"]: e.target.checked})}/>
-            </FormControl>
-            {about.addImage && <ImageUpload />}
-          </>
+          <ImageUpload />
         )}
 
         <HStack spacing={6}>
