@@ -18,6 +18,7 @@ export const ResumeProvider = ({ children }) => {
     linkedin: "",
     picture: "",
     aboutMe: "",
+    addImage: false,
   });
 
   const [educationList, setEducationList] = useState([
