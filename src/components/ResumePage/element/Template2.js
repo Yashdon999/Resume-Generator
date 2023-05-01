@@ -16,8 +16,6 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import myIamge from "./Ceo.jpeg";
 const ResumePreview = () => {
-
-
   const { theme, about, educationList, skills, workList, projects, printElem } =
     useResume();
   const imgStyle = {
@@ -37,33 +35,34 @@ const ResumePreview = () => {
         minH={"100vh"}
       >
         <div ref={printElem}>
-        <HStack>
-      {about.addImage && <>
-  {about.picture ? (
-    <img style={imgStyle} src={about.picture} alt="avatar" />
-  ) : (
-    <img style={imgStyle} src={myIamge} alt="avatar" />
-  )}
-  </>}
+          <HStack>
+            {about.addResumeImage && (
+              <>
+                {about.picture ? (
+                  <img style={imgStyle} src={about.picture} alt="avatar" />
+                ) : (
+                  <img style={imgStyle} src={myIamge} alt="avatar" />
+                )}
+              </>
+            )}
 
-  <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
-    <Heading as="h4" size="md">
-      {about.name ? about.name : "Harry Potter"}
-    </Heading>
-    <Text color={"gray.500"}>
-      {about.role ? about.role : "Full Stack Web Developer"}
-    </Text>
-  </VStack>
-</HStack>
-
+            <VStack m={4} alignItems={"flex-start"} spacing={0.5}>
+              <Heading as="h4" size="md">
+                {about.name ? about.name : "Harry Potter"}
+              </Heading>
+              <Text color={"gray.500"}>
+                {about.role ? about.role : "Full Stack Web Developer"}
+              </Text>
+            </VStack>
+          </HStack>
 
           <HStack
             bg={theme}
             color={"white"}
             p={4}
             justifyContent={"space-between"}
-            display={{md: 'flex'}}
-            flexWrap={{md: 'wrap'}}
+            display={{ md: "flex" }}
+            flexWrap={{ md: "wrap" }}
           >
             <HStack spacing={1} className="infoHolders">
               <MdMail />{" "}
@@ -87,13 +86,16 @@ const ResumePreview = () => {
             </HStack>
           </HStack>
 
-
           <Box mt={6}>
             <VStack alignItems={"flex-start"} px={4}>
               <Heading as="h4" size="md" color={"gray.700"}>
                 About Me
               </Heading>
-              <Text color={"gray.600"}>{about.aboutMe ? about.aboutMe: "I am a skilled wizard, trained in the art of magical application development. Using the latest incantations and spells, I create enchanting web applications that are both visually stunning and functionally powerful. My focus on precision and quality magic ensures that every product I create is worthy of the highest praise from even the most critical of magical authorities."}</Text>
+              <Text color={"gray.600"}>
+                {about.aboutMe
+                  ? about.aboutMe
+                  : "I am a skilled wizard, trained in the art of magical application development. Using the latest incantations and spells, I create enchanting web applications that are both visually stunning and functionally powerful. My focus on precision and quality magic ensures that every product I create is worthy of the highest praise from even the most critical of magical authorities."}
+              </Text>
             </VStack>
           </Box>
           <Box mt={6}>
@@ -101,7 +103,11 @@ const ResumePreview = () => {
               <Heading as="h4" size="md" color={"gray.700"}>
                 Objectives
               </Heading>
-              <Text color={"gray.600"}>{about.objectives ? about.objectives: "To leverage my skills in magical application development to create visually stunning and functionally powerful web applications that meet the highest standards of quality and exceed the expectations of even the most critical magical authorities."}</Text>
+              <Text color={"gray.600"}>
+                {about.objectives
+                  ? about.objectives
+                  : "To leverage my skills in magical application development to create visually stunning and functionally powerful web applications that meet the highest standards of quality and exceed the expectations of even the most critical magical authorities."}
+              </Text>
             </VStack>
           </Box>
 

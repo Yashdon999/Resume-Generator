@@ -8,13 +8,11 @@ import {
   Textarea,
   Switch
 } from "@chakra-ui/react";
-import React, { useState } from "react";
 import { useResume } from "../../Context";
 import ImageUpload from "../ImageUploadButton/ImageUpload.component";
 
 const About = () => {
   const { about, setAbout } = useResume();
-  const [addImage, setAddImage] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,9 +38,9 @@ const About = () => {
               <FormLabel htmlFor='img-alerts' mb='0'>
                 Add Image
               </FormLabel>
-              <Switch id='img-alerts' defaultChecked={about.addImage}  onChange={e => setAbout({...about, ["addImage"]: e.target.checked})}/>
+              <Switch id='img-alerts' defaultChecked={about.addResumeImage}  onChange={e => setAbout({...about, ["addResumeImage"]: e.target.checked})}/>
             </FormControl>
-            {about.addImage && <ImageUpload />}
+            {about.addResumeImage && <ImageUpload />}
           </>
         )}
 

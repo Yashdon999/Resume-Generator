@@ -68,7 +68,7 @@ const Template1 = () => {
                 </HStack>
               </HStack>
             </VStack>
-            {about.addImage && <>
+            {about.addResumeImage && <>
             {about.picture ? (
               <img className="avatarImage" style={imgStyle} src={about.picture} alt="avatar" />
             ) : (
