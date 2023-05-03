@@ -19,7 +19,12 @@ const Projects = () => {
   const { projects, setProjects } = useResume();
 
   const addMore = () => {
-    setProjects([...projects, projects]);
+    setProjects([...projects, {
+      id: uuidv4(),
+      name: "",
+      description: "",
+      url: "",
+    }]);
   };
 
   const handleChange = (e, id) => {

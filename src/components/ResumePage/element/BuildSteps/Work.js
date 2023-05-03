@@ -20,9 +20,17 @@ import { MdDelete } from "react-icons/md";
 
 const Work = () => {
   const { workList, setWorkList } = useResume();
-
+  console.log(workList)
   const addMore = () => {
-    setWorkList([...workList, workList]);
+    setWorkList([...workList, {
+      id: uuidv4(),
+      position: "",
+      company: "",
+      type: "",
+      startDate: "",
+      endDate: "",
+      description: "",
+    }]);
   };
 
   const handleChange = (e, id) => {
