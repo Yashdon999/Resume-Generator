@@ -22,7 +22,15 @@ const Work = () => {
   const { workList, setWorkList } = useResume();
 
   const addMore = () => {
-    setWorkList([...workList, workList]);
+    setWorkList([...workList, {
+      id: uuidv4(),
+      position: "",
+      company: "",
+      type: "",
+      startDate: "",
+      endDate: "",
+      description: "",
+    }]);
   };
 
   const handleChange = (e, id) => {
