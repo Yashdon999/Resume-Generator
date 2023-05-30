@@ -24,14 +24,20 @@ function Header() {
           Resume Generator
         </StyledNavbar.Brand>
         {!open ? (
-          <StyledNavbar.Toggle aria-controls="navbarScroll" style={{boxShadow: 'none'}}/>
+          <StyledNavbar.Toggle
+            aria-controls="navbarScroll"
+            style={{ boxShadow: "none" }}
+          />
         ) : (
-          <StyledNavbar.Toggle className="navbar-toggler" style={{boxShadow: 'none'}}>
+          <StyledNavbar.Toggle
+            className="navbar-toggler"
+            style={{ boxShadow: "none" }}
+          >
             <HiXMark size={33} />
           </StyledNavbar.Toggle>
         )}
         <StyledNavbar.Collapse id="navbarScroll">
-          <NavLinks> 
+          <NavLinks>
             <StyledNavLink exact as={NavLink} to="/">
               Home
             </StyledNavLink>
@@ -73,7 +79,15 @@ const StyledNavbar = styled(Navbar)`
 const NavLinks = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-right: 100px;
   flex: 1; /* make the NavLinks component take up all remaining space */
+
+  @media screen and (max-width: 991.98px) {
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 0px;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -98,6 +112,7 @@ const StyledNavLink = styled(NavLink)`
 const GitHubLink = styled.a`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: auto; /* push the GitHub logo to the left side of the header */
   color: #333;
   font-weight: 500;
@@ -107,9 +122,12 @@ const GitHubLink = styled.a`
   }
 
   img {
-    width: 24px;
-    height: 24px;
-    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    margin-top: 10px;
   }
 `;
 
