@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { useResume } from "../Context";
 import { MdMail, MdLocalPhone, MdLocationPin } from "react-icons/md";
-import { RiLinkedinBoxFill } from "react-icons/ri";
+import { RiLinkedinBoxFill, RiGithubFill, RiWindowFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import myIamge from "./Ceo.jpeg";
 const ResumePreview = () => {
@@ -79,9 +79,19 @@ const ResumePreview = () => {
               <Text>{about.address ? about.address : "Pune, MH"}</Text>
             </HStack>
             <HStack spacing={1} className="infoHolders">
-              <RiLinkedinBoxFill />{" "}
-              <Text as="a" href={about.linkedin}>
-                LinkedIn
+              <RiWindowFill iconSize='2em'/>{" "}
+              <Text as="a" href={about.website}>Portfolio
+              </Text>
+            </HStack>
+            <HStack spacing={1} className="infoHolders">
+            <RiLinkedinBoxFill />{" "}
+                  <Text as="a" href={about.linkedin}>
+                    LinkedIn
+                  </Text>
+            </HStack>
+            <HStack spacing={1} className="infoHolders">
+              <RiGithubFill iconSize='2em'/>{" "}
+              <Text as="a" href={about.github}> GitHub
               </Text>
             </HStack>
           </HStack>

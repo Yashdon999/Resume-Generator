@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { useResume } from "../Context";
 import { MdMail, MdLocalPhone, MdLocationPin } from "react-icons/md";
-import { RiLinkedinBoxFill } from "react-icons/ri";
+import { RiLinkedinBoxFill, RiGithubFill, RiWindowFill } from "react-icons/ri";
 import { BiLinkExternal } from "react-icons/bi";
 import myIamge from "./Ceo.jpeg";
 
@@ -59,6 +59,18 @@ const Template1 = () => {
                 <HStack className="infoHolders" spacing={1}>
                   <MdLocationPin />{" "}
                   <Text>{about.address ? about.address : "Pune, MH"}</Text>
+                </HStack>
+                <HStack className="infoHolders" spacing={1}>
+                  <RiWindowFill />{" "}
+                  <Text as="a" href={about.website}>
+                    Portfolio
+                  </Text>
+                </HStack>
+                <HStack className="infoHolders" spacing={1}>
+                  <RiGithubFill />{" "}
+                  <Text as="a" href={about.github}>
+                    Github
+                  </Text>
                 </HStack>
                 <HStack className="infoHolders" spacing={1}>
                   <RiLinkedinBoxFill />{" "}
