@@ -80,7 +80,7 @@ const StyledButton = styled(Button)`
 
 const StyledSection = styled.section`
   /* background-image: url(); */
-  background: linear-gradient(45deg, #cff2ff, #00dbde);
+  background: #d2ebf7;
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
