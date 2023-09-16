@@ -107,6 +107,31 @@ const About = () => {
             />
           </FormControl>
           <FormControl>
+            <FormLabel htmlFor="website">Website</FormLabel>
+            <Input
+              onChange={(e) => handleChange(e)}
+              name="website"
+              id="website"
+              type="url"
+              variant="filled"
+              placeholder="https://portfolio.com"
+            />
+          </FormControl>
+        </HStack>
+        
+        <HStack spacing={6}>
+          <FormControl>
+            <FormLabel htmlFor="github">Github</FormLabel>
+            <Input
+              onChange={(e) => handleChange(e)}
+              name="github"
+              id="github"
+              type="url"
+              variant="filled"
+              placeholder="https://github.com"
+            />
+          </FormControl>
+          <FormControl>
             <FormLabel htmlFor="linkedin">LinkedIn</FormLabel>
             <Input
               onChange={(e) => handleChange(e)}
