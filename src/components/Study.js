@@ -178,7 +178,7 @@ const Study = () => {
                 <Strong>Use Action Words</Strong>
                 <Text>
                   Use action words in your resume that showcase your achievements and
-                  capabilities. Words like "managed," "led," "created," "designed,"
+                  capabilities. Words like "managed", "led", "created", "designed",
                   etc. can make your resume more impactful and impressive.
                 </Text>
               </ListItem>
