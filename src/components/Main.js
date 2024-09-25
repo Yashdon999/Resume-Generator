@@ -321,7 +321,7 @@ const Main = () => {
         </Pilo1>
         <Button1 onClick={handleClick}>Create Resume Now</Button1>
         <ImageSection1>
-          <Img1
+          <Img
             src="https://resume-example.com/wp-content/uploads/2021/03/resumes-templates.png"
             alt="Resume2"
           />
