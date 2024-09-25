@@ -83,6 +83,7 @@ Thanks a lot for spending your time helping Resume Generator grow. Thanks a lot!
   <img src="https://avatars.githubusercontent.com/u/104668751?v=4" width="80" height="80" />
   <img src="https://avatars.githubusercontent.com/u/109973520?v=4" width="80" height="80" />
   <img src="https://avatars.githubusercontent.com/u/72117025?v=4" width="80" height="80" />
+  <img src="https://avatars.githubusercontent.com/u/161492096?v=4" width="80" height="80" />
   <img src="https://avatars.githubusercontent.com/u/77793128?v=4" width="80" height="80" />
   <img src="https://avatars.githubusercontent.com/u/68184118?v=4" width="80" height="80" />
   <img src="https://avatars.githubusercontent.com/u/81804004?v=4" width="80" height="80" />
