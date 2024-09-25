@@ -56,7 +56,7 @@ const About = () => {
         image: "https://avatars.githubusercontent.com/u/104668751?v=4",
       },
       {
-        login: "omingle-og",
+        login: "Omingle-og",
         html_url: "https://github.com/omingle-og",
         image: "https://avatars.githubusercontent.com/u/161492096?v=4",
       }
