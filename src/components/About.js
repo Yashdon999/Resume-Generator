@@ -46,6 +46,11 @@ const About = () => {
         image: "https://avatars.githubusercontent.com/u/109973520?v=4",
       },
       {
+        login: "omingle-og",
+        html_url: "https://github.com/omingle-og",
+        image: "https://avatars.githubusercontent.com/u/161492096?v=4",
+      },
+      {
         login: "ShashwatAgrawal20",
         html_url: "https://github.com/shashwatagrawal20",
         image: "https://avatars.githubusercontent.com/u/72117025?v=4",
@@ -55,11 +60,7 @@ const About = () => {
         html_url: "https://github.com/yashdon999",
         image: "https://avatars.githubusercontent.com/u/104668751?v=4",
       },
-      {
-        login: "omingle-og",
-        html_url: "https://github.com/omingle-og",
-        image: "https://avatars.githubusercontent.com/u/161492096?v=4",
-      }
+      
     ],
     []
   );
